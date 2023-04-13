@@ -83,13 +83,45 @@ function helpPanel()
 # Funcion para hacer el download de los archivos y verificar cambios
 function updateFiles()
 {
-  #revisando si existe las maquinas de HTB
-  if [ ! -f machines_htb ]; then
-    echo -e "\n ${yellowColour}[+]${endColour}${grayColour}Descargando máquinas de HTB...${endColour}";
-    wget ${url_htb} -q -O machines_htb; 
+  #revisando maquinas de vulnhub
+  if [ ! -f machines_vulnhub ]; then
+    echo -e "\n ${yellowColour}[+]${endColour}${grayColour}Descargando máquinas de Vulnhub...${endColour}";
     wget ${url_vulnhub} -q -O machines_vulnhub;
   else
-    echo -e "\n ${yellowColour}[+] Comprobando actualizaciones de HTB ...${endColour}";
+    echo -e "\n ${yellowColour}[+] Comprobando actualizaciones de Vulnhub ...${endColour}";
+    wget ${url_vulnhub} -q -O machines_vuln_tmp;
+    md5_vuln=$(md5sum machines_vulnhub | awk 'NF{print $1}');
+    md5_vuln_tmp=$(md5sum machines_vuln_tmp | awk 'NF{print $1}');
+    echo -e "\n ${yellowColour}[-]${endColour} ${grayColour}Checando md5sum: ${endColour} ${blueColour}${md5_vuln}${endColour} ${grayColour}-${endColour} ${greenColour}${md5_vuln_tmp}${endColour}";
+    
+    if [ "$md5_vuln" == "$md5_vuln_tmp" ]; then
+      echo -e "\n ${yellowColour}[+]${endColour} Todo esta actualizado.";
+    else
+      echo -e "\n ${yellowColour}[+]${endColour}${grayColour} Actualizando...${endColour}";
+      rm machines_vulnhub;
+      mv machines_vuln_tmp machines_vulnhub;
+    fi
+  fi
+
+  #revisando si existe las maquinas de HTB
+  if [ ! -f machines_htb ]; then
+    echo -e "\n ${yellowColour}[+]${endColour}${grayColour}Descargando máquinas de HackTheBox...${endColour}";
+    wget ${url_htb} -q -O machines_htb; 
+  else
+    echo -e "\n ${yellowColour}[+] Comprobando actualizaciones de HackTheBox ...${endColour}";
+    
+    wget ${url_htb} -q -O machines_htb_tmp;
+    md5_htb=$(md5sum machines_htb | awk 'NF{print $1}');
+    md5_htb_tmp=$(md5sum machines_htb_tmp | awk 'NF{print $1}');
+    echo -e "\n ${yellowColour}[-]${endColour} ${grayColour}Checando md5sum: ${endColour} ${blueColour}${md5_htb}${endColour} ${grayColour}-${endColour} ${greenColour}${md5_htb_tmp}${endColour}";
+
+    if [ "$md5_htb" == "$md5_htb_tmp" ]; then
+      echo -e "\n ${yellowColour}[+]${endColour} Todo esta actualizado.";
+    else
+      echo -e "\n ${yellowColour}[+]${endColour} ${grayColour} Actualizando...${endColour}";
+      rm machines_htb;
+      mv machines_htb_tmp machines_htb;
+    fi
   fi
 }
 
