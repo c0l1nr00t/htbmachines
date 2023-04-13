@@ -1,0 +1,2392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HackTheBox</title>
+</head>
+<body>
+<table border="1" cellpadding="2" cellspacing="0">
+<tr style="font-weight: bold; background-color: #aaa;">
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Nuestro buscador para filtrar por máquinas: https://infosecmachines.io/</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>🡰 Usa este buscador para filtrar por lo que necesites (Técnicas, OS, Dificultad, Certificaciones, etc.)</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Máquina</td><td>Dirección IP</td><td>Sistema Operativo</td><td>Dificultad</td><td>Técnicas Vistas</td><td>Like</td><td>Writeup</td><td>Resuelta</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Tentacle</td><td>10.10.10.224</td><td>Linux</td><td>Difícil</td><td>DNS Enumeration (dnsenum)
+SQUID Proxy
+WPAD Enumeration
+OpenSMTPD v2.0.0 Exploit
+SSH using Kerberos (gssapi)
+Abusing .k5login file
+Abusing krb5.keytab file</td><td>eCPPTv2
+eCPTXv2
+OSCP
+OSEP
+eWPT
+eWPTXv2
+OSWE
+Active Directory</td><td>https://www.youtube.com/watch?v=hFIWuWVIDek</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Validation</td><td>10.10.11.116</td><td>Linux</td><td>Fácil</td><td>SQLI (Error Based)
+SQLI -&gt; RCE (INTO OUTFILE)
+Information Leakage</td><td>eJPT
+eWPT</td><td>https://www.youtube.com/watch?v=78i-qbhEUVU</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Mischief</td><td>10.10.10.92</td><td>Linux</td><td>Insane</td><td>SNMP Enumeration
+Information Leakage
+IPV6
+ICMP Data Exfiltration (Python Scapy)</td><td>OSCP
+eWPT
+eWPTXv2
+eCPPTv2
+eCPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=Q6vlt9BlnWg</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Reddish</td><td>10.10.10.94</td><td>Linux</td><td>Insane</td><td>Abusing Node-Red
+Chisel &amp; Socat Usage
+Redis-Cli Exploitation
+Rsync Abusing
+Cron Exploitation
+Disk Mount
+File Transfer Tips
+PIVOTING</td><td>
+eCPPTv2
+eCPTXv2</td><td>https://www.youtube.com/watch?v=XQQ104hWFXE</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Return</td><td>10.10.11.108</td><td>Windows</td><td>Fácil</td><td>Abusing Printer
+Abusing Server Operators Group
+Service Configuration Manipulation</td><td>eJPT
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=5QC5lshrDDo</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Horizontall</td><td>10.10.11.105</td><td>Linux</td><td>Fácil</td><td>Information Leakage
+Port Forwarding
+Strapi CMS Exploitation
+Laravel Exploitation</td><td>eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=s2b-BH0I7R4</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Pressed</td><td>10.10.11.142</td><td>Linux</td><td>Difícil</td><td>Password Guessing
+WordPress Abusing RPC Calls
+WordPress XML-RPC Create WebShell
+PwnKit Exploit</td><td>OSCP
+eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=67TQsX88EtM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Epsilon</td><td>10.10.11.134</td><td>Linux</td><td>Media</td><td>Git Source Leak Exploit (GitHack)
+AWS Enumeration
+Lambda Function Enumeration
+Authentication Bypass
+Abusing JWT
+Server Side Template Injection (SSTI)
+Tar Symlink Exploitation</td><td>eWPT
+eWPTXv2
+OSCP
+OSWE</td><td>https://www.youtube.com/watch?v=tMsK6ZiB7CQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Jeeves</td><td>10.10.10.63</td><td>Windows</td><td>Media</td><td>Jenkins Exploitation (Groovy Script Console)
+RottenPotato (SeImpersonatePrivilege)
+PassTheHash (Psexec)
+Breaking KeePass
+Alternate Data Streams (ADS)</td><td>OSCP
+eJPT
+eWPT</td><td>https://www.youtube.com/watch?v=TwJiEWjI6Go</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Pit</td><td>10.10.10.241</td><td>Linux</td><td>Media</td><td>Information Leakage
+SNMP Enumeration (Snmpwalk/Snmpbulkwalk)
+SeedDMS Exploitation
+SELinux (Extra)
+SNMP Code Execution</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=mxHbnV_LB20</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Blackfield</td><td>10.10.10.192</td><td>Windows</td><td>Difícil</td><td>SMB Enumeration
+Kerberos User Enumeration (Kerbrute)
+ASRepRoast Attack (GetNPUsers)
+Bloodhound Enumeration
+Abusing ForceChangePassword Privilege (net rpc)
+Lsass Dump Analysis (Pypykatz)
+Abusing WinRM
+SeBackupPrivilege Exploitation
+DiskShadow
+Robocopy Usage
+NTDS Credentials Extraction (secretsdump)</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=0cPq2UV2vmg</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>EarlyAccess</td><td>10.10.11.110</td><td>Linux</td><td>Difícil</td><td>XSS Injection
+XSS Cookie Stealing
+Cookie Hijacking
+Code Analysis
+Building a Key Generator (PYTHON)
+SQLI (Error Based)
+LFI &amp;&amp; Wrappers
+Bash Scripting for Host Discovering
+Information Leakage
+Pivoting
+Abusing Docker
+Abusing Capabilities</td><td>eCPPTv2
+eCPTXv2
+OSCP
+eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=31CvSq9lcqU</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Flustered</td><td>10.10.11.131</td><td>Linux</td><td>Media</td><td>Abusing Squid Proxy
+Abusing GlusterFS
+Information Leakage
+Server Side Template Injection (SSTI)[RCE]
+Abusing Azure Storage</td><td>OSCP
+eJPT
+eWPT
+eWPTXv2
+eCPPTv2
+OSWE</td><td>https://www.youtube.com/watch?v=MQeB_fItmW8</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Love</td><td>10.10.10.239</td><td>Windows</td><td>Fácil</td><td>Server Side Request Forgery (SSRF)
+Exploiting Voting System
+Abusing AlwaysInstallElevated (msiexec/msi file)</td><td>eJPT
+eWPT
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=5tEBvG0OnWQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>NodeBlog</td><td>10.10.11.139</td><td>Linux</td><td>Fácil</td><td>NoSQL Injection (Authentication Bypass)
+XXE File Read
+NodeJS Deserialization Attack (IIFE Abusing)
+Mongo Database Enumeration</td><td>eJPT
+eWPT</td><td>https://www.youtube.com/watch?v=MPArplyCIjM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>NunChucks</td><td>10.10.11.122</td><td>Linux</td><td>Fácil</td><td>NodeJS SSTI (Server Side Template Injection)
+AppArmor Profile Bypass (Privilege Escalation)</td><td>eJPT
+eWPT</td><td>https://www.youtube.com/watch?v=RRig0TQKYy8</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Bolt</td><td>10.10.11.114</td><td>Linux</td><td>Media</td><td>Information Leakage
+Subdomain Enumeration
+SSTI (Server Side Template Injection)
+Abusing PassBolt
+Abusing GPG</td><td>eJPT
+eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=zemqqJMl1VA</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>GoodGames</td><td>10.10.11.130</td><td>Linux</td><td>Fácil</td><td>SQLI (Error Based)
+Hash Cracking Weak Algorithms
+Password Reuse
+Server Side Template Injection (SSTI)
+Docker Breakout (Privilege Escalation) [PIVOTING]</td><td>eJPT
+eWPT
+eCPPTv2
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=r3WMeRtwmFc</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Hawk</td><td>10.10.10.102</td><td>Linux</td><td>Media</td><td>OpenSSL Cipher Brute Force and Decryption
+Drupal Enumeration/Exploitation
+H2 Database Exploitation</td><td>eJPT
+eWPT</td><td>https://www.youtube.com/watch?v=qiCozh2m0yE</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Monitors</td><td>10.10.10.238</td><td>Linux</td><td>Difícil</td><td>Information Leakage
+WordPress Plugin Exploitation (Spritz)
+Local File Inclusion (LFI)
+Cacti 1.2.12 Exploitation
+Apache OfBiz Deserialization Attack (RCE)
+Docker Breakout (cap_sys_module Capabilitie) [PRIVILEGE ESCALATION]</td><td>eCPPTv2
+eWPT
+eWPTXv2
+OSCP
+OSWE</td><td>https://www.youtube.com/watch?v=u0eFap03oDY</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Intelligence</td><td>10.10.10.248</td><td>Windows</td><td>Media</td><td>Information Leakage
+Kerberos Enumeration (Kerbrute)
+Creating a DNS Record (dnstool.py) [Abusing ADIDNS]
+Intercepting Net-NTLMv2 Hashes with Responder
+BloodHound Enumeration
+Abusing ReadGMSAPassword Rights (gMSADumper)
+Pywerview Usage
+Abusing Unconstrained Delegation
+Abusing AllowedToDelegate Rights (getST.py) (User Impersonation)
+Using .ccache file with wmiexec.py (KRB5CCNAME)</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=LI8wnTUc5-I</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Scavenger</td><td>10.10.10.155</td><td>Linux</td><td>Difícil</td><td>Domain Zone Transfer (AXFR)
+SQLI (Error Based) [WHOIS]
+PCAP Analysis (Tshark &amp;&amp; Wireshark)
+Abusing Rootkit</td><td>eWPT</td><td>https://www.youtube.com/watch?v=5-L8T8Qsxfs</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Driver</td><td>10.10.11.106</td><td>Windows</td><td>Fácil</td><td>Password Guessing
+SCF Malicious File
+Print Spooler Local Privilege Escalation (PrintNightmare) [CVE-2021-1675]</td><td>OSCP (Escalada)
+eJPT</td><td>https://www.youtube.com/watch?v=TY8NgOUVXjM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Minion</td><td>10.10.10.57</td><td>Windows</td><td>Insane</td><td>Server Side Request Forgery (SSRF) [Internal Port Discovery]
+ICMP Reverse Shell (PowerShell) [Firewall Bypassing]
+Alternate Data Streams (ADS)
+Firewall Evasion [Firewall Rules Manipulation]</td><td>eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=yCXJI0H0704</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Sizzle</td><td>10.10.10.103</td><td>Windows</td><td>Insane</td><td>SMBCacls Enumeration
+Malicious SCF File (Getting NetNTLMv2 Hash)
+Ldap Enumeration (LdapDomainDump)
+Abusing Microsoft Active Directory Certificate Services
+Creating Certificate Signing Requests (CSR) [Openssl]
+CLM / AppLocker Break Out (Escaping ConstrainedLanguage)
+PSByPassCLM Usage (CLM / AppLocker Break out)
+Msbuild (CLM / AppLocker Break Out)
+Kerberoasting Attack (Rubeus)
+Kerberoasting Attack (Chisel Port Forward - GetUserSPNs.py)
+WINRM Connections
+BloodHound Enumeration
+DCSync Attack (secretsdump.py)
+DCSync Attack (Mimikatz)
+PassTheHash (wmiexec.py)</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=7W2h7qoCShk</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Toolbox</td><td>10.10.10.236</td><td>Windows</td><td>Fácil</td><td>PostgreSQL Injection (RCE)
+Abusing boot2docker [Docker-Toolbox]
+Pivoting</td><td>eWPT
+OSCP (Intrusión)
+eJPT
+eCPPTv2</td><td>https://www.youtube.com/watch?v=0wTYfJsZdKU</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Enterprise</td><td>10.10.10.61</td><td>Linux</td><td>Media</td><td>WordPress Lcars Plugin SQLI Vulnerability
+SQL Injection (boolean-based blind, error-based, time-based blind)
+WordPress Exploitation [www-data] (Theme Edition - 404.php Template)
+Joomla Exploitation [www-data] (Template Manipulation)
+Docker Breakout
+Ghidra Binary Analysis
+Buffer Overflow (No ASLR - PIE enabled) [RET2LIBC] (Privilege Escalation)</td><td>eWPT
+eCPPTv2
+eCPTXv2
+Buffer Overflow</td><td>https://www.youtube.com/watch?v=2ZzVu5mdzgA</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Chaos</td><td>10.10.10.120</td><td>Linux</td><td>Media</td><td>Password Guessing
+Abusing e-mail service (claws-mail)
+Crypto Challenge (Decrypt Secret Message - AES Encrypted)
+LaTeX Injection (RCE)
+Bypassing rbash (Restricted Bash)
+Extracting Credentials from Firefox Profile</td><td>eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=-t0CkWmiq6s</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>SteamCloud</td><td>10.10.11.133</td><td>Linux</td><td>Fácil</td><td>Kubernetes API Enumeration (kubectl)
+Kubelet API Enumeration (kubeletctl)
+Command Execution through kubeletctl on the containers
+Cluster Authentication (ca.crt/token files) with kubectl
+Creating YAML file for POD creation
+Executing commands on the new POD
+Reverse Shell through YAML file while deploying the POD</td><td>eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=q3mFOd8eRQs</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Seal</td><td>10.10.10.250</td><td>Linux</td><td>Media</td><td>Information Leakage (GitBucket)
+Breaking Parser Logic - Abusing Reverse Proxy / URI Normalization
+Exploiting Tomcat (RCE) [Creating malicious WAR]
+Abusing existing YML Playbook file [Cron Job]
+Ansible-playbook exploitation (sudo privilege)</td><td>eWPT
+eWPTXv2
+OSCP (Intrusión)
+OSWE</td><td>https://www.youtube.com/watch?v=IShxpoRMxW8</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Hancliffe</td><td>10.10.11.115</td><td>Windows</td><td>Difícil</td><td>Abusing URI Normalization
+Server Side Template Injection (SSTI) [NUXEO Vulnerability]
+Unified Remote 3 Exploitation (RCE)
+Decrypt Mozilla protected passwords
+Reversing EXE in Ghidra
+Buffer Overflow (Socket Reuse Technique) [AVANZADO]</td><td>Buffer Overflow
+OSED
+OSCP (Intrusión)
+eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=A_7Cwl2bBC0</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Antique</td><td>10.10.11.107</td><td>Linux</td><td>Fácil</td><td>SNMP Enumeration
+Network Printer Abuse
+CUPS Administration Exploitation (ErrorLog)
+EXTRA -&gt; (DirtyPipe) [CVE-2022-0847]</td><td>eJPT</td><td>https://www.youtube.com/watch?v=pvtergVU__4</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Object</td><td>10.10.11.132</td><td>Windows</td><td>Difícil</td><td>Jenkins Exploitation (New Job + Abusing Build Periodically)
+Jenkins Exploitation (Abusing Trigger builds remotely using TOKEN)
+Firewall Enumeration Techniques
+Jenkins Password Decrypt
+BloodHound Enumeration
+Abusing ForceChangePassword with PowerView
+Abusing GenericWrite (Set-DomainObject - Setting Script Logon Path)
+Abusing WriteOwner (Takeover Domain Admins Group)</td><td>OSCP
+OSEP
+OSWE
+Active Directory</td><td>https://www.youtube.com/watch?v=K8d2CmQAV9Q</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Stratosphere</td><td>10.10.10.64</td><td>Linux</td><td>Media</td><td>Apache Struts Exploitation (CVE-2017-5638)
+Python Library Hijacking (Privilege Escalation)</td><td>eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=KADZhYY9Wpw</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Devzat</td><td>10.10.11.118</td><td>Linux</td><td>Media</td><td>Fuzzing Directory .git (GIT Project Recomposition)
+Web Injection (RCE)
+Abusing InfluxDB (CVE-2019-20933)
+Abusing Devzat Chat /file command (Privilege Escalation)
+EXTRA (Crypto CTF Challenge | N Factorization)</td><td>eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=WXdF3wqwtqQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Helpline</td><td>10.10.10.132</td><td>Windows</td><td>Difícil</td><td>ManageEngine ServiceDesk Plus User Enumeration
+ManageEngine ServiceDesk Plus Authentication Bypassing
+ManageEngine ServiceDesk Plus Remote Code Execution
+Disabling Windows Defender (PowerShell)
+Mimikatz - Getting NTLM User Hashes (lsadump::sam)
+Reading Event Logs with Powershell (RamblingCookieMonster) [Get-WinEventData]
+Decrypting EFS files with Mimikatz
+Getting the certificate with Mimikatz (crypto::system)
+Decrypting the masterkey with Mimikatz (dpapi::masterkey)
+Decrypting the private key with Mimikatz (dpapi::capi)
+Building a correct PFX with Openssl
+Installing the PFX via certutil
+Installing VNC in the box via msiexec
+Connecting to the VNC service using vncviewer
+Converting Secure String File to PlainText
+Using RunAs to execute commands as the administrator</td><td>eWPT
+OSCP</td><td>https://www.youtube.com/watch?v=EGlLewVI_M0</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Ransom</td><td>10.10.11.153</td><td>Linux</td><td>Media</td><td>Login Bypass (Type Juggling Attack)
+Decrypting a ZIP file (PlainText Attack - Bkcrack) - CONTI RANSOMWARE</td><td>eWPT</td><td>https://www.youtube.com/watch?v=_hnKZ1YgzyA</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Bankrobber</td><td>10.10.10.154</td><td>Windows</td><td>Insane</td><td>Blind XSS Injection
+Stealing the session cookie by XSS injection
+SQLI - Error Based
+SQLI - File Access
+SQLI - Stealing Net-NTLMv2 Hash (impacket-smbserver)
+XSS + XSRF =&gt; RCE
+Abusing a custom binary (Brute Force Pin &amp;&amp; Overflow)</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP (Intrusión)</td><td>https://www.youtube.com/watch?v=NAKePo2HLjI</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Tenet</td><td>10.10.10.223</td><td>Linux</td><td>Media</td><td>PHP Deserialization Attack
+Abusing Race Condition</td><td>eWPT</td><td>https://www.youtube.com/watch?v=Isgpbsi9Tpc</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Stacked</td><td>10.10.11.112</td><td>Linux</td><td>Insane</td><td>Virtual Hosting Enumeration
+Referer XSS Injection
+XSS - Creating JS file (accessing unauthorized resources)
+Checking/Reading mail through XSS injection
+AWS Enumeration
+Lambda Enumeration
+Creating a Lambda Function (NodeJS)
+Invoking the created lambda function
+RCE on LocalStack
+Abusing FunctionName Parameter (AWS) by exploiting XSS vulnerability (RCE)
+Finding and exploiting custom 0Day [Privilege Escalation]
+Root FileSystem Access by abusing Docker</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=L1w3DwxFHFg</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Mantis</td><td>10.10.10.52</td><td>Windows</td><td>Difícil</td><td>Database Enumeration (DBeaver)
+Bloodhound Enumeration (bloodhound-python)
+Exploiting MS14-068 (goldenPac.py) [Microsoft Kerberos Checksum Validation Vulnerability]</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=3p0myaukHBk</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>TheNotebook</td><td>10.10.10.230</td><td>Linux</td><td>Media</td><td>Abusing JWT (Gaining privileges)
+Abusing Upload File
+Docker Breakout [CVE-2019-5736 - RUNC] (Privilege Escalation)</td><td>eWPT
+OSCP (Escalada)
+OSWE</td><td>https://www.youtube.com/watch?v=dekA2dzLSlE</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Travel</td><td>10.10.10.189</td><td>Linux</td><td>Difícil</td><td>Git Project Recomposition (.git) [Git-Dumper]
+Abusing WordPress (SimplePie + Memcache) [PHP Code Analysis]
+Memcache Object Poisoning (Gopherus + Deserialization Attack + RCE)
+LDAP Enumeration (Apache Directory Studio - GUI)
+Abusing LDAP to add an SSH Key
+Abusing LDAP to modify the user group to sudo (Privilege Escalation)</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=B5_NsxWlXTU</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Shocker</td><td>10.10.10.56</td><td>Linux</td><td>Fácil</td><td>ShellShock Attack (User-Agent)
+Abusing Sudoers Privilege (Perl)
+EXTRA: Creamos nuestro propio CTF en Docker que contemple ShellShock</td><td>eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=xaOgoGYyJF4</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>SneakyMailer</td><td>10.10.10.197</td><td>Linux</td><td>Media</td><td>Information Leakage
+Mass Emailing Attack with SWAKS
+Password Theft
+Abusing Pypi Server (Creating a Malicious Pypi Package)
+Abusing Sudoers Privilege (Pip3)</td><td>OSCP</td><td>https://www.youtube.com/watch?v=QWkM74ZBVO4</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Secret</td><td>10.10.11.120</td><td>Linux</td><td>Fácil</td><td>Code Analysis
+Abusing an API
+Json Web Tokens (JWT)
+Abusing/Leveraging Core Dump [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=YfVnbzpjz2I</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Giddy</td><td>10.10.10.104</td><td>Windows</td><td>Media</td><td>SQL Injection (XP_DIRTREE) [SQLI] - Get Net-NTLMv2 Hash
+Windows Defender Evasion (Ebowla)
+Windows Defender Evasion (Building our own C program)
+Service Listing Techniques
+Abusing Unifi-Video (Privilege Escalation)</td><td>eWPT
+OSCP
+OSWE</td><td>https://www.youtube.com/watch?v=2ZnbIAPzmpg</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Haystack</td><td>10.10.10.115</td><td>Linux</td><td>Fácil</td><td>ElasticSearch Enumeration
+Information Leakage
+Kibana Enumeration
+Kibana Exploitation (CVE-2018-17246)
+Abusing Logstash (Privilege Escalation)</td><td>eWPT
+OSCP (Escalada)
+OSWE</td><td>https://www.youtube.com/watch?v=-Ck0z8N1LxQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Passage</td><td>10.10.10.206</td><td>Linux</td><td>Media</td><td>CuteNews Exploitation
+Code Analysis
+USBCreator D-Bus Privilege Escalation
+Python Exploit Development (AutoPwn)</td><td>eWPT
+OSWE
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=O5v3yzvgYjw</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Altered</td><td>10.10.11.159</td><td>Linux</td><td>Difícil</td><td>Brute Force Pin / Rate-Limit Bypass [Headers]
+Type Juggling Bypassing
+SQL Injection (Error Based)
+SQLI to RCE -&gt; INTO OUTFILE Query
+Dirty Pipe Exploit (But with PAM-Wordle configured)</td><td>OSCP
+eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=_8ih4aNNI4M</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Shibboleth</td><td>10.10.11.124</td><td>Linux</td><td>Media</td><td>Abusing IPMI (Intelligent Platform Management Interface)
+Zabbix Exploitation
+MariaDB Remote Code Execution (CVE-2021-27928)</td><td>eWPT
+OSCP</td><td>https://www.youtube.com/watch?v=mkB1Vfw35XY</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Tally</td><td>10.10.10.59</td><td>Windows</td><td>Difícil</td><td>SharePoint Enumeration
+Information Leakage
+Playing with mounts (cifs, curlftpfs)
+Abusing Keepass
+Abusing Microsoft SQL Server (mssqlclient.py - xp_cmdshell RCE)
+Abusing SeImpersonatePrivilege (JuicyPotato)</td><td>OSCP</td><td>https://www.youtube.com/watch?v=fMZCktwAD2w</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Ellingson</td><td>10.10.10.139</td><td>Linux</td><td>Difícil</td><td>Abusing Werkzeug Debugger (RCE)
+Binary Exploitation
+Advanced Buffer Overflow x64 - ROP / ASLR Bypass (Leaking Libc Address + Ret2libc + Setuid)</td><td>Buffer Overflow
+eWPT (Intrusión)</td><td>https://www.youtube.com/watch?v=8dLPT-imMYk</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Quick</td><td>10.10.10.186</td><td>Linux</td><td>Difícil</td><td>HTTP/3 Enumeration
+Recompiling curl to accept HTTP/3 requests
+Information Leakage
+Brute force in authentication panel
+XSS Injection
+Abusing Esigate (ESI Injection - RCE)
+Manipulating passwords in the database
+Abuing POS Print Server (File Hijacking Attack)</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=C1NZVah39ms</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Traverxec</td><td>10.10.10.165</td><td>Linux</td><td>Fácil</td><td>Nostromo Exploitation
+Abusing Nostromo HomeDirs Configuration
+Exploiting Journalctl (Privilege Escalation)</td><td>eWPT
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=7aCplH8WZm0</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Sink</td><td>10.10.10.225</td><td>Linux</td><td>Insane</td><td>HTTP Request Smuggling Exploitation (Leak Admin Cookie)
+Cookie Hijacking
+Information Leakage
+AWS Enumeration
+AWS Secrets Manager
+AWS Key_management Enumeration
+AWS KMS Decrypting File</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=2qKXz_Rk2YE</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Overflow</td><td>10.10.11.119</td><td>Linux</td><td>Difícil</td><td>Padding Oracle Attack (Padbuster)
+Padding Oracle Attack (Bit Flipper Attack - BurpSuite) [EXTRA]
+Cookie Hijacking
+SQL Injection (Generic UNION query) [SQLI] - Error Based
+Breaking Password
+Upload File - Abusing Exiftool (RCE)
+DNS Hijacking (Abusing Cron Job)
+Ghidra Binary Analysis
+Reversing Code (Computing valid PIN)
+Buffer Overflow (Controlling the program and manipulating its flow to desired functions)
+Abusing Decryption Function (XOR Trick) [Privilege Escalation]</td><td>OSWE
+eWPT
+eWPTXv2
+Buffer Overflow</td><td>https://www.youtube.com/watch?v=tEbBDlOFen0</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Fighter</td><td>10.10.10.72</td><td>Windows</td><td>Insane</td><td>Advanced SQL Injection [SQLI] - MS SQL Server 2014 [Bypass Protection] [Python Scripting] [RCE]
+Abusing Cron Jobs
+Capcom Rootkit Privilege Escalation
+Binary and DLL Analysis in order to get root.txt [Radare2]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=DWF0inlo8Zw</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Tabby</td><td>10.10.10.194</td><td>Linux</td><td>Fácil</td><td>Local File Inclusion (LFI)
+Abusing Tomcat Virtual Host Manager
+Abusing Tomcat Text-Based Manager - Deploy Malicious War (Curl Method)
+LXC Exploitation (Privilege Escalation)</td><td>eWPT
+OSCP (Escalada)
+eJPT (Intrusión)</td><td>https://www.youtube.com/watch?v=hKCNrXXLClQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Backend</td><td>10.10.11.161</td><td>Linux</td><td>Media</td><td>API Enumeration
+Abusing API - Registering a new user
+Abusing API - Logging in as the created user
+Enumerating FastApi Endpoints through Docs
+Abusing FastAPI - We managed to change the admin password
+Abusing FastAPI - We get the ability to read files from the machine (Source Analysis)
+Creating our own privileged JWT
+Abusing FastAPI - We achieved remote command execution through the exec endpoint
+Information Leakage (Privilege Escalation)</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=OugU0j3_COM</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Hackback</td><td>10.10.10.128</td><td>Windows</td><td>Insane</td><td>Subdomain Enumeration
+Information Leakage
+Password Fuzzing
+Gophish Template Log Poisoning (Limited RCE)
+Internal Port Discovery
+reGeorg - Accessing internal ports through a SOCKS proxy (proxychains)
+Accessing the WinRM service through reGeorg and SOCKS proxy
+Abusing Cron Job + SeImpersonatePrivilege Alternative Exploitation
+Playing with PIPES - pipeserverimpersonate
+Impersonating users and executing commands as the impersonated user
+Bypassing Firewall Rules (BlockInbound/BlockOutbound)
+Abusing Services
+Alternate Data Streams (ADS)</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP (Escalada)
+eCPTXv2</td><td>https://www.youtube.com/watch?v=UMyJt-fiBz8</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>October</td><td>10.10.10.16</td><td>Linux</td><td>Media</td><td>Abusing October CMS (Upload File Vulnerability)
+Buffer Overflow - Bypassing ASLR + Ret2libc (x32 bits)
+Buffer Overflow - Ret2libc without ASLR (x32 bits EXTRA)</td><td>eWPT (Intrusión)
+Buffer Overflow</td><td>https://www.youtube.com/watch?v=3QZfUBVr-AA</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Holiday</td><td>10.10.10.25</td><td>Linux</td><td>Difícil</td><td>SQL Injection [SQLI] - Sqlite
+XSS Injection - Bypassing Techniques (fromCharCode) + Own Javascript Code + Session Cookie Theft
+Abusing existing parameters - RCE
+NodeJS npm - Privilege Escalation</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=ymvb94yAefM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Blunder</td><td>10.10.10.191</td><td>Linux</td><td>Fácil</td><td>Bludit CMS Exploitation
+Bypassing IP Blocking (X-Forwarded-For Header)
+Directory Traversal Image File Upload (Playing with .htaccess)
+Abusing sudo privilege (CVE-2019-14287)</td><td>eWPT
+OSWE
+eWPTXv2</td><td>https://www.youtube.com/watch?v=C64POGPpank</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Static</td><td>10.10.10.246</td><td>Linux</td><td>Difícil</td><td>Compressed File Recomposition (Fixgz)
+Abusing TOTP (Python Scripting - NTP protocol)
+Playing with Static Routes
+XDebug Exploitation (RCE)
+Abusing PHP-FPM (RCE) [CVE-2019-11043] (PIVOTING)
+Abusing Capabilities (cap_setuid + Path Hijacking | Privilege Escalation)</td><td>eWPT
+eJPT (Rutas Estáticas)
+eCPPTv2
+eCPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=BmtLkWmJbgk</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Aragog</td><td>10.10.10.78</td><td>Linux</td><td>Media</td><td>XXE (XML External Entity Injection) Exploitation
+Modifying a wordpress login to steal credentials (Privilege Escalation)</td><td>eWPT
+OSWE (Intrusión)</td><td>https://www.youtube.com/watch?v=Q2jTs8QepFQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Querier</td><td>10.10.10.125</td><td>Windows</td><td>Media</td><td>Macro Inspection (Olevba2)
+MSSQL Hash Stealing [Net-NTLMv2] (xp_dirtree)
+Abusing MSSQL (xp_cmdshell)
+Cached GPP Files (Privilege Escalation)</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=hfzYnjBzW_k</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Toby</td><td>10.10.11.121</td><td>Linux</td><td>Insane</td><td>Abusing GOGS (Project Enumeration)
+Static Code Analysis (Finding a backdoor with php-malware-scanner)
+Code deofuscation
+Reverse shell through backdoor
+Setting up a SOCKS5 Proxy (Chisel/Proxychains)
+Database Enumeration (Accessing GOGS)
+Abusing API (Stealing an authentication hash in MYSQL through Wireshark)
+Playing with epoch time to generate a potential list of passwords
+Cracking Hashes
+PIVOTING
+Process Enumeration (pspy)
+Abusing cron job to obtain a private key
+Decrypting database passwords (AES Encryption)
+Abusing PAM (Ghidra Analysis)
+Getting the root password by abusing time
+Advanced persistence techniques</td><td>eWPT
+OSWE
+eWPTXv2
+eCPPTv2
+eCPTXv2</td><td>https://www.youtube.com/watch?v=TLKid8-aI0E</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Backdoor</td><td>10.10.11.125</td><td>Linux</td><td>Fácil</td><td>WordPress Local File Inclusion Vulnerability (LFI)
+LFI to RCE (Abusing /proc/PID/cmdline)
+Gdbserver RCE Vulnerability
+Abusing Screen (Privilege Escalation) [Session synchronization]</td><td>OSCP
+eWPT
+OSWE
+eWPTXv2</td><td>https://www.youtube.com/watch?v=u5hjJ3p-XfU</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Control</td><td>10.10.10.167</td><td>Windows</td><td>Difícil</td><td>SQL Injection [SQLI] - Error Based
+Advanced Bash Scripting (EXTRA)
+SQLI to RCE (Into Outfile - PHP File Creation)
+ConPtyShell (Fully Interactive Reverse Shell for Windows)
+Playing with ScriptBlocks and PSCredential to execute commands as another user
+AppLocker Bypass
+WinPEAS Enumeration
+Service ImagePath Hijacking (Privilege Escalation)</td><td>OSCP
+OSWE
+eWPT</td><td>https://www.youtube.com/watch?v=I1IDYLQeieE</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Unobtainium</td><td>10.10.10.235</td><td>Linux</td><td>Difícil</td><td>Inspecting custom application
+Code Analysis
+Information Leakage
+Local File Inclusion (LFI)
+Google CloudStorage Commands Vulnerability (Command Injection) [RCE]
+Prototype Pollution Exploitation (Granting us privileges)
+Kubernetes (Interacting with the API) [kubectl]
+Finding containers with kubectl
+PIVOTING
+Abusing Prototype Pollution to jump to another container
+Listing secrets with kubectl
+Creating malicious Pod (Privilege Escalation) [Bad Pods]
+Peirates - Kubernetes Penetration Testing Tool [EXTRA]</td><td>eWPT
+eWPTXv2
+OSWE
+eCPPTv2
+eCPTXv2</td><td>https://www.youtube.com/watch?v=zWDLDqis0Hs</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Cache</td><td>10.10.10.188</td><td>Linux</td><td>Media</td><td>Information Leakage (Code Inspection)
+Abusing OpenEMR
+Broken Access Control
+Authentication Bypassing (Abusing the registration panel)
+SQL Injection - Error Based [SQLI]
+OpenEMR Authentication Exploit (RCE)
+Abusing Docker Group (Privilege Escalation)</td><td>eWPT
+OSWE
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=C0zJUGM00mc</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Sense</td><td>10.10.10.60</td><td>Linux</td><td>Fácil</td><td>Information Leakage
+PFsense - Abusing RRD Graphs (RCE) [Evasion Techniques]
+Python Exploit Development (AutoPwn) [EXTRA]</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=mWTmXpQlgCs</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Breadcrumbs</td><td>10.10.10.228</td><td>Windows</td><td>Difícil</td><td>Local File Inclusion (LFI) [Abusing file_get_contents]
+Abusing No Redirect
+Forge PHPSESSID and getting valid Cookies
+Forge JWT
+Uploading WebShell
+Obtaining system credentials through the webshell
+Abusing Sticky Notes
+Binary Analysis (Radare2)
+SQL Injection (SQLI) [Error Based]
+AES Decrypt (Cyberchief)</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=R89-6VzGgFs</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Search</td><td>10.10.11.129</td><td>Windows</td><td>Difícil</td><td>Information Leakage - Password in picture (wtf?)
+RPC Enumeration (rpcclient)
+Ldap Enumeration (ldapdomaindump)
+Bloodhound Enumeration
+Kerberoasting Attack (GetUserSPNs.py)
+SMB Password Spray Attack (Crackmapexec)
+Unprotecting password-protected Excel (Remove Protection)
+Playing with pfx certificates
+Gaining access to Windows PowerShell Web Access
+Abusing ReadGMSAPassword privilege
+Abusing GenericAll privilege (Resetting a user&#39;s password)
+Gaining access with wmiexec</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=vTsD0TSgdGg</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Ariekei</td><td>10.10.10.65</td><td>Linux</td><td>Insane</td><td>ImageTragick Exploitation (Specially designed &#39;.mvg&#39; file)
+ShellShock Attack (WAF Bypassing)
+Abusing Docker privilege
+PIVOTING</td><td>eCPPTv2
+eCPTXv2
+eWPT
+OSWE</td><td>https://www.youtube.com/watch?v=mjrrfNc454c</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Forge</td><td>10.10.11.111</td><td>Linux</td><td>Media</td><td>Bypassing URL Blacklist
+Server Side Request Forgery (SSRF)
+Abusing Sudoers Privilege (Abusing Python Script)</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=6JWPJ3YgDXc</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>SwagShop</td><td>10.10.10.140</td><td>Linux</td><td>Fácil</td><td>Magento CMS Exploitation (Creating an admin user)
+Magento - Froghopper Attack (RCE)
+Abusing sudoers (Privilege Escalation)</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=7Lc9taXgLCA</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>BackendTwo</td><td>10.10.11.162</td><td>Linux</td><td>Media</td><td>API Enumeration
+Abusing API - Registering a user
+Accessing the Docs path of FastAPI
+Mass Assignment Attack (Becoming superusers)
+Abusing API - Reading system files
+Information Leakage
+Forge JWT (Assigning us an extra privilege)
+Abusing API - Creating a new file to achieve remote command execution (RCE)
+Abusing pam_wordle (Privilege Escalation)</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=JLaMxPbdvlo</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>MultiMaster</td><td>10.10.10.179</td><td>Windows</td><td>Insane</td><td>SQLI (SQL Injection) - Unicode Injection
+WAF Bypassing
+Advanced Python Scripting - Creation of an automation tool to handle Unicode in SQL injection
+Database enumeration through the previously created utility
+Cracking Passwords
+Active Directory Enumeration
+Enumerating domain information through SQL injection
+Obtaining domain RIDs through SQL injection
+Applying brute-force attack  (SID = SID+RID) to obtain existing domain users [Python Scripting]
+SMB Brute Force Attack (Crackmapexec)
+Enumerating AD existing users (rpcclient/rpcenum)
+Abusing Remote Management User group
+Microsoft Visual Studio 10.0 Exploitation (User Pivoting)
+Using libwebsockets in order to connect to a CEF Debugger (RCE)
+AMSI Bypass - Playing with Nishang
+AMSI Bypass - Bypass-4MSI Alternative (evil-winrm)
+DLL Inspection - Information Leakage
+BloodHound Enumeration
+Abusing the GenericWrite privilege on a user
+Making a user vulnerable to an ASREPRoast attack - Disabling Kerberos Pre-Authentication
+Requesting the TGT of the manipulated user
+Abusing Server Operators Group
+Abusing an existing service by manipulating its binPATH
+We change the password of the administrator user after restarting the manipulated service</td><td>OSCP
+OSEP
+eWPT
+eWPTXv2
+OSWE
+Active Directory</td><td>https://www.youtube.com/watch?v=z6nmcyk1Pbo</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Unicode</td><td>10.10.11.126</td><td>Linux</td><td>Media</td><td>JWT Enumeration
+JWT - Claim Misuse Vulnerability
+JSON Web Key Generator (Playing with mkjwk)
+Forge JWT
+Open Redirect Vulnerability
+Creating a JWT for the admin user
+LFI (Local File Inclusion) - Unicode Normalization Vulnerability
+Abusing Sudoers Privilege
+Playing with pyinstxtractor and pycdc
+Bypassing badchars and creating a new passwd archive  (Privilege Escalation)</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=ofz_1ncuCm4</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Postman</td><td>10.10.10.160</td><td>Linux</td><td>Fácil</td><td>Redis Enumeration
+Redis Exploitation - Write SSH Key
+Webmin Exploitation - Python Scripting
+We create our own exploit in Python - AutoPwn [Ruby code adaptation from Metasploit]</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=PE3B3rHVTSw</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Servmon</td><td>10.10.10.184</td><td>Windows</td><td>Fácil</td><td>NVMS-1000 Exploitation - Directory Traversal
+Local File Inclusion (LFI)
+Local Port Forwarding - SSH
+NSClient++ Exploitation - Privilege Escalation</td><td>eWPT
+OSCP</td><td>https://www.youtube.com/watch?v=UOrtDZsP0aQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Schooled</td><td>10.10.10.234</td><td>Linux</td><td>Media</td><td>VHost Brute Force
+Moodle Enumeration
+Moodle - Stored XSS
+Stealing a teacher&#39;s session cookie
+Privilege escalation from teacher role into manager role to RCE [CVE-2020-14321]
+Elevating our privilege to Manager in Moodle - User Impersonation
+Mass Assignment Attack - Enable Full Permissions
+Giving us the ability to install a plugin
+Achieving remote command execution through installation of a malicious Plugin
+Enumerating the database once we have gained access to the system
+Cracking Hashes
+Abusing sudoers privilege (pkg install package) [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=HNHvMgQwHQM</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Oz</td><td>10.10.10.96</td><td>Linux</td><td>Difícil</td><td>SQL Injection (SQLI)
+Server Side Template Injection (SSTI) (RCE)
+Abusing Knockd
+Network enumeration techniques using bash oneliners
+PIVOTING
+Portainer 1.11.1 Exploitation - Resetting the admin password
+Creating a new container from Portainer (Privilege Escalation)</td><td>eWPT
+eWPTXv2
+OSWE
+eCPPTv2
+eCPTXv2</td><td>https://www.youtube.com/watch?v=nqGs42yM75c</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>CTF</td><td>10.10.10.122</td><td>Linux</td><td>Insane</td><td>LDAP Injection
+LDAP Injection - Discovering valid usernames
+LDAP Injection - Attribute Brute Force [Discovering valid LDAP fields]
+LDAP Injection - Obtaining OTP Seed
+Generating One-Time Password (OTP) [stoken]
+Second Order Ldap Injection
+Abusing backup - 7za Symbolic Links (Privilege Escalation)</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=LWh6unoFu8I</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Buff</td><td>10.10.10.198</td><td>Windows</td><td>Fácil</td><td>Gym Management System Exploitation (RCE)
+CloudMe Exploitation [Buffer Overflow] [OSCP Like] (Manual procedure) [Python Scripting]</td><td>OSCP
+eCPPTv2
+Buffer Overflow</td><td>https://www.youtube.com/watch?v=TytUFooC3kU</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Kotarak</td><td>10.10.10.55</td><td>Linux</td><td>Difícil</td><td>Server Side Request Forgery (SSRF) [Internal Port Discovery]
+Information Leakage [Backup]
+Tomcat Exploitation [Malicious WAR]
+Dumping hashes [NTDS]
+Wget 1.12 Vulnerability [CVE-2016-4971] [Privilege Escalation] (PIVOTING)</td><td>eWPT
+eWPTXv2
+OSWE
+eCPPTv2
+eCPTXv2</td><td>https://www.youtube.com/watch?v=q2Cv2IQUzdw</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Crossfit</td><td>10.10.10.208</td><td>Linux</td><td>Insane</td><td>FTP SSL Certificate Enumeration
+XSS Injection
+Subdomain Enumeration through the Origin Header [Access-Control-Allow-Origin]
+Accessing internal websites through XSS - Creating a javascript file
+Registering a new user through XSS - CSRF Protection Bypass
+Uploading a webshell with lftp
+Cracking Hashes
+Abusing Cron Job
+php-shellcommand exploitation - escapeArgs option is not working properly
+Injecting data into the database to achieve remote command execution (RCE) [User Pivoting]
+Binary Analysis - dbmsg [GHIDRA]
+Reversing
+Creating an exploit - Abusing Rand [Time travel]
+Abusing symbolic links
+Injecting our own public key as authorized_keys in /root</td><td>eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=sIaVrGnzRjM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>CrimeStoppers</td><td>10.10.10.80</td><td>Linux</td><td>Difícil</td><td>Local File Inclusion (LFI)
+LFI - Base64 Wrapper [Reading PHP files]
+LFI to RCE - ZIP Wrapper
+Thunderbird - Password Extraction &amp; Reading Messages (firefoxpwd tool)
+Rootkit - apache_modrootme [GHIDRA/Radare2 Analysis] (Privilege Escalation)</td><td>eWPT
+OSWE</td><td>https://www.youtube.com/watch?v=6IO3gAtP3dc</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Nightmare</td><td>10.10.10.66</td><td>Linux</td><td>Insane</td><td>HTML Injection
+XSS Injection
+SQL Injection (SQLI) - Error Based
+OpenSSH &lt;= 6.6 SFTP misconfiguration universal exploit (RCE)
+Script Modification
+Binary Analysis [GHIDRA/Radare2]
+In-depth analysis with Radare2 [Tips and tricks]
+Command Injection - User Pivoting
+Ubuntu Xenial Privilege Escalation - Kernel Exploitation</td><td>eWPT
+OSWE</td><td>https://www.youtube.com/watch?v=nBDnCjRxmO8</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Pandora</td><td>10.10.11.136</td><td>Linux</td><td>Fácil</td><td>SNMP Fast Enumeration
+Information Leakage
+Local Port Forwarding
+SQL Injection - Admin Session Hijacking
+PandoraFMS v7.0NG Authenticated Remote Code Execution [CVE-2019-20224]
+Abusing Custom Binary - PATH Hijacking [Privilege Escalation]</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=Np_zA-SOwYo</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Bastard</td><td>10.10.10.9</td><td>Windows</td><td>Media</td><td>Drupal Enumeration
+Drupal 7.X Module Services - Remote Code Execution [SQL Injection]
+Drupal Admin Cookie Hijacking
+Drupal &lt; 7.58 / &lt; 8.3.9 / &lt; 8.4.6 / &lt; 8.5.1 - &#39;Drupalgeddon2&#39; Remote Code Execution
+SA-CORE-2018-004 - &#39;Drupalgeddon3&#39; Remote Code Execution
+Sherlock Enumeration (Privilege Escalation)
+MS15-051-KB3045171 - Kernel Exploitation [Way 1]
+Abusing SeImpersonatePrivilege [Way 2]</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=VHeDNq4OrqI</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Safe</td><td>10.10.10.147</td><td>Linux</td><td>Fácil</td><td>Information Leakage
+Buffer Overflow [x64] [ROP Attacks using PwnTools] [NX Bypass] [ASLR Bypass]
+Trying to hijack the argument to the system() function by loading our content in RDI [Way 1]
+Leaking puts and libc address to make a system call with the argument loaded in RDI [Way 2] [EXTRA]
+Abusing keepass to obtain the root password [Privilege Escalation]</td><td>Buffer Overflow</td><td>https://www.youtube.com/watch?v=jvoiMos46IY</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>RedCross</td><td>10.10.10.113</td><td>Linux</td><td>Media</td><td>Subdomain Enumeration
+XSS Injection - Stealing the admin user cookie
+Injection RCE
+Abusing Custom Binary - Binary Exploitation
+Buffer Overflow [x64] [ROP Attacks using PwnTools] [NX Bypass] [ASLR Bypass] [Privilege Escalation]</td><td>eWPT
+Buffer Overflow</td><td>https://www.youtube.com/watch?v=prg88ajxAPc</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>TartarSauce</td><td>10.10.10.88</td><td>Linux</td><td>Media</td><td>RFI (Remote File Inclusion) - Abusing Wordpress Plugin [Gwolle-gb]
+RFI to RCE (Creating our malicious PHP file)
+Abusing Sudoers Privilege (Tar Command)
+Abusing Cron Job (Privilege Escalation) [Code Analysis] [Bash Scripting]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=nyp6eixPSMA</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Cronos</td><td>10.10.10.13</td><td>Linux</td><td>Media</td><td>Domain Zone Transfer (AXFR)
+SQLI (Blind Time Based) - Creating a custom Python script
+Command Injection
+Abusing Cron Job [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=kBw3UyBt7Hc</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>AdmirerToo</td><td>10.10.11.137</td><td>Linux</td><td>Difícil</td><td>Subdomain Enumeration
+Adminer Enumeration
+SSRF (Server Side Request Forgery) in Adminer [CVE-2021-21311]
+Abusing redirect to discover internal services
+OpenTSDB Exploitation [CVE-2020-35476] [Remote Code Execution]
+Searching for valid metrics
+OpenCats PHP Object Injection to Arbitrary File Write
+Abusing Fail2ban [Remote Code Execution] (CVE-2021-32749)
+Playing with phpggc in order to serialize our data
+Abusing whois config file + OpenCats + Fail2ban [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=YmZLdJRBKv0</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Admirer</td><td>10.10.10.187</td><td>Linux</td><td>Fácil</td><td>Information Leakage
+Admirer Exploitation (Abusing LOAD DATA LOCAL Query)
+Abusing Sudoers Privilege [Library Hijacking - Python] (Privilege Escalation)</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=ofAHf1i8XMQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Time</td><td>10.10.10.214</td><td>Linux</td><td>Media</td><td>Jackson CVE-2019-12384 Exploitation - SSRF to RCE
+Abusing Cron Job [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=ESxAyDX2Dg4</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Nineveh</td><td>10.10.10.43</td><td>Linux</td><td>Media</td><td>Abusing http forms with Hydra - Login Brute Force
+Local File Inclusion (LFI)
+Steganography - id_rsa hidden in image
+Abusing phpLiteAdmin v1.9 (Remote Code Execution)
+Abusing Knockd - Port Knocking
+Chkrootkit 0.49 - Local Privilege Escalation
+Using Wrappers - LFI [EXTRA]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=ATDC1eGgnp0</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Fortune</td><td>10.10.10.127</td><td>Linux</td><td>Insane</td><td>Command Injection
+OpenSSL - Creating a new key
+OpenSSL - Creating a CSR file (Certificate Signing Request)
+OpenSSL - Creating a PEM file
+OpenSSL - Creating a PFX file (pkcs12) to import it into the Firefox browser
+NFS share mount
+Editing our user ID in order to gain access to the NFS directories
+Code Analysis - Crypto Challenge</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=zYjeNFx-ymg</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Timing</td><td>10.10.11.135</td><td>Linux</td><td>Media</td><td>Local File Inclusion (LFI)
+Using Wrappers - Base64 Wrapper
+Code Inspection
+Role manipulation
+File Upload Exploitation
+Abusing Sudoers Privilege - Playing with symbolic links</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=5GH6Ze84FTQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Bounty</td><td>10.10.10.93</td><td>Windows</td><td>Fácil</td><td>IIS Enumeration
+Creating our own extension fuzzer in Python [Python Scripting] [EXTRA]
+IIS Exploitation - Executing code via web.config file upload
+Abusing SeImpersonatePrivilege - Juicy Potato [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=lVLVaArHL5o</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Curling</td><td>10.10.10.150</td><td>Linux</td><td>Fácil</td><td>Information  Leakage wtf xd
+Joomla Enumeration
+Joomla Exploitation [Abusing Templates] [RCE]
+Decompression Challenge
+Abusing Curl [Playing with Config files] [Privilege Escalation]</td><td>eWPT</td><td>https://www.youtube.com/watch?v=NKKvDtPacOw</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Writer</td><td>10.10.11.101</td><td>Linux</td><td>Media</td><td>RPC Enum
+SQLi Bypass Login + SQL Injection [Database Enumeration]
+SQLi - File System Enumeration (Abusing load_file)
+Python Code Analysis
+Command Injection
+Cracking Hashes
+Postfix Enumeration
+Abusing Cron Job [User Pivoting]
+Abusing apt config files [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=Eh5ywJJX1oE</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Reel</td><td>10.10.10.77</td><td>Windows</td><td>Difícil</td><td>Metadata Inspection
+SMTP Enumeration (VRFY Manual vs smtp-user-enum)
+Crafting a malicious RTF document [PHISHING] [CVE-2017-0199]
+Sending an email to get command execution [RCE]
+Playing with PSCredential Objects (XML files | PowerShell - Import-CliXml)
+ACLs Inspection (Active Directory Enumeration)
+Abusing WriteOwner Active Directory Rights
+Playing with PowerView (Set-DomainObjectOwner, Add-DomainObjectAcl &amp; Set-DomainUserPassword)
+Abusing WriteDacl Active Directory Rights
+Information Leakage [Privilege Escalation]</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=ai5_9H-wutw</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Jerry</td><td>10.10.10.95</td><td>Windows</td><td>Fácil</td><td>Information Leakage
+Abusing Tomcat [Intrusion &amp; Privilege Escalation]</td><td>eJPT</td><td>https://www.youtube.com/watch?v=bB-M5vPegMk</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Meta</td><td>10.10.11.140</td><td>Linux</td><td>Media</td><td>Subdomain Enumeration
+Abusing File Upload
+Exiftool Exploitation [RCE]
+ImageMagick Exploitation [User Pivoting] - SVG MSL Polyglot File
+Abusing Neofetch [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=L58krS9kY_A</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Jail</td><td>10.10.10.34</td><td>Linux</td><td>Insane</td><td>Code Analysis
+Binary Exploitation
+Buffer Overflow x32 - Socket Re-Use Shellcode Technique
+GDB Tips
+NFSv3 Privesc
+Abusing sudoers privilege (rvim command)
+Cracking RAR file
+Crypto Challenge (Playing with RsaCtfTool to get the private key)</td><td>Buffer Overflow
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=lCrQLzE-CjI</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Tenten</td><td>10.10.10.10</td><td>Linux</td><td>Media</td><td>Wordpress Enumeration
+CV filename disclosure on Job-Manager Wordpress Plugin [CVE-2015-6668]
+Steganography Challenge (Steghide)
+Cracking Hashes [Protected SSH Private Key]
+Abusing sudoers privilege</td><td>eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=T1pr-A8qA7I</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>SecNotes</td><td>10.10.10.97</td><td>Windows</td><td>Media</td><td>User Enumeration (Wfuzz)
+Reflected XSS
+Stored XSS
+SQL Injection
+Cross-Site Request Forgery (CSRF) - Changing a user&#39;s password
+IIS Exploitation (Uploading WebShell)
+Abusing Linux subsystem
+Information Leakage [Privilege Escalation]</td><td>eWPT
+OSCP</td><td>https://www.youtube.com/watch?v=JZf7t3UMuVw</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Chatterbox</td><td>10.10.10.74</td><td>Windows</td><td>Media</td><td>Achat 0.150 beta7 - Buffer Overflow (Windows 7 32 bits)
+Generating a Shellcode based on our needs + TIPS
+Icacls Abuse (Privilege Escalation)
+PowerUp Enumeration (Alternative Privilege Escalation)</td><td>OSCP
+Buffer Overflow</td><td>https://www.youtube.com/watch?v=mQnwwu97f1g</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Union</td><td>10.10.11.128</td><td>Linux</td><td>Media</td><td>SQLI (SQL Injection) - UNION Injection
+SQLI - Read Files
+HTTP Header Command Injection - X-FORWARDED-FOR [RCE]
+Abusing sudoers privilege [Privilege Escalation]</td><td>eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=i2aHMXFb1Yk</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Paper</td><td>10.10.11.143</td><td>Linux</td><td>Fácil</td><td>Information Leakage
+Abussing WordPress - Unauthenticated View Private/Draft Posts
+Abusing Rocket Chat Bot
+Polkit (CVE-2021-3560) [Privilege Escalation]</td><td>eWPT
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=7X5p3WmSnIs</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Dab</td><td>10.10.10.86</td><td>Linux</td><td>Difícil</td><td>Applying brute force to an authentication panel - Wfuzz (Discovering valid password)
+Applying cookie discovery with Wfuzz (Brute Force)
+SSRF - Server Side Request Forgery (Internal Port Discovery) - Wfuzz
+Abusing Memcached - Getting stored credentials
+Cracking Hashes
+SSH User Enumeration - CVE-2018-15473
+Abusing SUID Binary
+Ltrace/Radare2 Inspection (Password Leaking)
+Hijacking dynamically linked shared object library [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=ZmagS_Q_FrY</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Fulcrum</td><td>10.10.10.62</td><td>Linux</td><td>Insane</td><td>API Enumeration - Endpoint Brute Force
+Advanced XXE Exploitation (XML External Entity Injection)
+XXE - Custom Entities
+XXE - External Entities
+XXE - XML Parameter Entities
+XXE - Blind SSRF (Exfiltrate data out-of-band) + Base64 Wrapper [Reading Internal Files]
+XXE + RFI (Remote File Inclusion) / SSRF to RCE
+Host Discovery - Bash Scripting
+Port Discovery - Bash Scripting
+Decrypting PSCredential Password with PowerShell
+PIVOTING 1 - Tunneling with Chisel + Evil-WinRM
+Gaining access to a Windows system
+PowerView.ps1 - Active Directory Users Enumeration (Playing with Get-DomainUser)
+Information Leakage - Domain User Password
+PIVOTING 2 - Using Invoke-Command to execute commands on another Windows server
+Firewall Bypassing (Playing with Test-NetConnection in PowerShell) - DNS Reverse Shell
+Authenticating to the DC shares - SYSVOL Enumeration
+Information Leakage - Domain Admin Password
+PIVOTING 3 - Using Invoke-Command to execute commands on the Domain Controller (DC)</td><td>eWPT
+eWPTXv2
+eCPPTv2
+eCPTXv2
+OSWE
+OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=O8-l2KNeRkM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Monteverde</td><td>10.10.10.172</td><td>Windows</td><td>Media</td><td>RPC Enumeration
+Credential Brute Force - CrackMapExec
+Shell Over WinRM
+Abusing Azure Admins Group - Obtaining the administrator&#39;s password (Privilege Escalation)</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=-wQFA1zPqIc</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Player</td><td>10.10.10.145</td><td>Linux</td><td>Difícil</td><td>Subdomain Enumeration
+JWT Enumeration
+Information Leakage - Abusing No Redirect
+Playing with BFAC (Backup File Artifacts Checker) in order to find a configuration file
+PHP Source Code Analysis
+Forge JWT
+Abusing ffmpeg AVI Exploit in order to read internal files
+Escaping Limited Shell - OpenSSH 7.2p1 (Authenticated) XAuth Command Injection
+Abusing Codiad IDE in order to execute commands (RCE - www-data)
+Abusing Cron Job (Privilege Escalation)</td><td>eWPT
+OSWE
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=UEGJKIvx_Y0</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Phoenix</td><td>10.10.11.149</td><td>Linux</td><td>Difícil</td><td>Asgaros Forum Exploitation - Unauthenticated Blind Time Based SQL Injection (SQLI)
+Download From Files 1.48 - Arbitrary File Upload (WordPress Plugin Exploitation)
+Cracking Hashes
+Abusing PAM configuration for the Secure Shell service (SSH)
+Abusing Cron Job (Rsync Exploitation) [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=2dI1F8c0al8</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Inception</td><td>10.10.10.67</td><td>Linux</td><td>Media</td><td>DomPDF Exploitation - Local File Inclusion (LFI) [CVE-2014-2383]
+Bash Scripting
+Abusing Squid Proxy
+Internal Port Discovery via Squid Proxy - Wfuzz
+Abusing WebDAV - WebShell (Using davtest)
+Creating a Forward Shell (Python Scripting) - Bypassing Firewall Rules
+PIVOTING
+Host Discovery &amp;&amp; Port Discovery - Bash Scripting
+Abusing Cron Job - Apt Pre-Invoke Script (Privilege Escalation)</td><td>eWPT
+OSWE
+eCPPTv2</td><td>https://www.youtube.com/watch?v=RcvpSxngnQI</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Europa</td><td>10.10.10.22</td><td>Linux</td><td>Media</td><td>SSL Certificate Inspection
+Login Bypass - SQLI
+SQLI (Blind Time Based) [Python Scripting]
+Abusing preg_replace (REGEX Danger) [RCE]
+Creating an AutoPwn script for Intrusion [Python Scripting]
+Abusing Cron Job [Privilege Escalation]</td><td>OSCP
+eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=PpkQW8U0-cc</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Teacher</td><td>10.10.10.153</td><td>Linux</td><td>Fácil</td><td>Information Leakage
+Abusing Moodle - Login BruteForce (Wfuzz)
+Moodle Exploitation - Code Injection (Abusing Math formulas in Quiz component) [RCE]
+Database Enumeration
+Cracking Hashes
+Abusing Cron Job [Privilege Escalation]</td><td>eWPT
+OSWE
+eWPTXv2
+OSCP</td><td>https://www.youtube.com/watch?v=SZoH_6maN6k</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Falafel</td><td>10.10.10.73</td><td>Linux</td><td>Difícil</td><td>Information Leakage
+SQL Injection (SQLI) - Abusing substring function
+Obaining user passwords [Python Scripting]
+PHP Type Juggling Exploitation (0e hash collision)
+Abusing File Upload - File name truncation (Bordering the limits)
+Abusing video group - Taking a screenshot to view a password [GIMP &amp;&amp; Playing with virtual_size]
+Abusing disk group to read the flag [debugfs] [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=VMlTK6Okxok</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Optimum</td><td>10.10.10.8</td><td>Windows</td><td>Fácil</td><td>HttpFileServer 2.3 Exploitation [RCE]
+System Recognition - Windows Exploit Suggester
+Microsoft Windows 8.1 (x64) - &#39;RGNOBJ&#39; Integer Overflow (MS16-098) [Privilege Escalation]</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=ggkUREL6djQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Undetected</td><td>10.10.11.146</td><td>Linux</td><td>Media</td><td>Virtual Hosting Enumeration
+Abusing Directory Listing
+PHPUnit 5.6 Exploitation (CVE-2017-9841) [RCE]
+Backup Inspection
+Binary Analysis - GHIDRA
+Cracking Hashes
+Apache Backdoor Analysis [Privilege Escalation]</td><td>eWPT
+OSWE</td><td>https://www.youtube.com/watch?v=L7MU3DZqIN0</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Worker</td><td>10.10.10.203</td><td>Windows</td><td>Media</td><td>SVN - Subversion Enumeration
+Information Leakage
+VHost Fuzzing - Gobuster
+Azure DevOps Enumeration
+Abusing Azure DevOps - Creating a Branch
+Abusing Azure DevOps - Playing with existing Pipelines [RCE]
+IIS Exploitation
+Elevating our Azure DevOps privilege
+Abusing Azure DevOps - Creating a new Pipeline
+Azure DevOps Exploitation - Creating a malicious YAML file [Privilege Escalation]</td><td>OSCP
+eWPT
+eWPTXv2</td><td>https://www.youtube.com/watch?v=Bcwl1OfFOfU</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Bart</td><td>10.10.10.81</td><td>Windows</td><td>Media</td><td>Subdomain Enumeration - Gobuster
+Information Leakage
+Username enumeration - Abusing the Forget Password Option
+Simple Chat Exploitation - Creating a new user
+Log Poisoning Attack - User Agent [RCE]
+Nishang Invoke-PowerShellTcp Shell
+Abusing SeImpersonatePrivilege [Privilege Escalation]</td><td>OSCP
+eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=zqwCsqeyNrI</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Conceal</td><td>10.10.10.116</td><td>Windows</td><td>Difícil</td><td>UDP Scan
+SNMP Enumeration
+Enumerating Ike Hosts - ike-scan
+Installing and configuring Strongswan (IPSEC/VPN) [ipsec.secret/ipsec.conf]
+Performing a new scan through IPSEC
+Abusing IIS - File Upload via FTP (Malicious ASP file) [RCE]
+Nishang Invoke-PowerShellTcp Shell
+Abusing SeImpersonatePrivilege [Privilege Escalation]</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=i2khZEZvoPk</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Arctic</td><td>10.10.10.11</td><td>Windows</td><td>Fácil</td><td>Adobe ColdFusion 8 Exploitation
+Directory Traversal Vulnerability
+Cracking Hashes
+Abusing Scheduled Tasks - Creating malicious JSP file
+Abusing SeImpersonatePrivilege [Privilege Escalation]</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=cZ-C3d7mux0</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>RouterSpace</td><td>10.10.11.148</td><td>Linux</td><td>Fácil</td><td>Mobile Application Penetration Testing
+APK Analysis and Debugging
+Decoding APK with APKTool
+Files Inspection
+Installing Anbox on Parrot Security
+Setting up a new proxy in Anbox
+Installing the APK application and analyzing requests with Burpsuite
+Command Injection in one of the found requests [RCE]
+LinPeas Recon - Enumeration
+Abusing Sudo Version 1.8.31 [Privilege Escalation]</td><td>eWPT
+Mobile</td><td>https://www.youtube.com/watch?v=AWD2eDF1oiw</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Oouch</td><td>10.10.10.177</td><td>Linux</td><td>Difícil</td><td>FTP Enumeration
+Abusing OAuth Endpoint
+Virtual Hosting Enumeration
+Breaking OAuth Logic - Authorize as Administrator
+Registering a new application - Django Docs
+Abusing Authorization Workflow
+Token Stealing
+Playing with Bearer Tokens - Abusing Authentication
+Information Leakage
+Host Discovery &amp;&amp; Port Discovery - Bash Scripting
+PIVOTING
+UWSGI Exploitation [RCE] - User Pivoting
+Abusing DBUS Message [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+eCPPTv2
+OSWE</td><td>https://www.youtube.com/watch?v=uIIZG2miowo</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Celestial</td><td>10.10.10.85</td><td>Linux</td><td>Media</td><td>NodeJS Deserialization Attack [RCE]
+IIFE Serialization/Deserialization Attack - Explained
+Node Reverse Shell
+Abusing Cron Job</td><td>OSWE
+eWPT
+eWPTXv2
+OSCP</td><td>https://www.youtube.com/watch?v=esrAYODKnBY</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Resolute</td><td>10.10.10.169</td><td>Windows</td><td>Media</td><td>RPC Enumeration - Abusing querydispinfo
+CrackMapExec SMB Authentication Sprying
+Abusing WinRM - EvilWinRM
+Information Leakage
+LOLBAS
+Abusing DnsAdmins Group - dnscmd [Privilege Escalation]
+Creating a malicious DLL and injecting it into the dns service</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=h_brlhoSfy8</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Book</td><td>10.10.10.176</td><td>Linux</td><td>Media</td><td>SQL Truncation Attack
+Local File Read via XSS in Dynamically Generated PDF - HackTricks
+Abusing Cron Job - Logrotate Exploit (Logrotten) [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=d7GcXm_DWHg</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Haircut</td><td>10.10.10.24</td><td>Linux</td><td>Media</td><td>SSRF Attack (Server Side Request Forgery)
+Abusing a Curl implementation - Upload malicious PHP file
+Command Injection - Alternative Exploitation
+GNU Screen 4.5.0 - Local Privilege Escalation</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=9gurBGeazok</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Acute</td><td>10.10.11.145</td><td>Windows</td><td>Difícil</td><td>Virtual Hosting
+Information Leakage
+Abusing Windows PowerShell Web Access
+Real-time monitoring of the victim&#39;s screen
+Getting remote command execution on another server - PIVOTING
+Abusing a PowerShell file to get remote command execution as another user - User Pivoting
+Dump Hives &amp;&amp; Get Hashes
+Cracking Hashes
+Password Reuse
+Abusing Cron Job - BAT file [Privilege Escalation]</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=ZYW-Cj1yjdQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Sauna</td><td>10.10.10.175</td><td>Windows</td><td>Fácil</td><td>Information Leakage
+Ldap Enumeration
+Kerberos User Enumeration - Kerbrute
+ASRepRoast Attack (GetNPUsers)
+Cracking Hashes
+System Enumeration - WinPEAS
+AutoLogon Credentials
+BloodHound - SharpHound.ps1
+DCSync Attack - Secretsdump [Privilege Escalation]
+PassTheHash</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=zuMEHLnH_E0</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Lazy</td><td>10.10.10.18</td><td>Linux</td><td>Media</td><td>Padding Oracle Attack (Padbuster)
+Bit Fliper Attack (BurpSuite) - Obtaining the admin user&#39;s Cookie
+Abusing SUID binary
+PATH Hijacking [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=1bJryn5mJLM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Charon</td><td>10.10.10.31</td><td>Linux</td><td>Difícil</td><td>SQLI (SQL Injection) - Union Injection
+SQLI - WAF Bypass
+Cracking Hashes
+Uploading a file abusing a hidden property
+Filtering Bypass
+Abusing RSA - Creating a private key based on a public one
+Decrypting a message with the generated private key
+Abusing SUID Binary [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=S1L92tszls0</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Feline</td><td>10.10.10.205</td><td>Linux</td><td>Difícil</td><td>Information leakage in error message
+RCE by deserialization in Apache Tomcat with PersistentManager - CVE-2020-9484 [RCE]
+Playing with Ysoserial - CommonsCollections2
+Manipulating our session cookie (JSESSIONID) + Directory Path Traversal
+Playing with chisel [Socks Proxy + Proxychains (socks5)]
+SaltStack Exploitation - CVE-2020-1651
+Gaining root access to a container
+Playing with docker.sock file + Abusing Docker API [Privilege Escalation]
+PIVOTING</td><td>eWPT
+eWPTXv2
+eCPPTv2
+eCPPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=0e91a_Pns2Q</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Blue</td><td>10.10.10.40</td><td>Windows</td><td>Fácil</td><td>SMB Enumeration
+Eternalblue Exploitation (MS17-010) [Triple Z Exploit]
+Obtaining credentials stored in memory [MIMIKATZ + Windows Defender Evasion] (EXTRA)
+Enabling RDP from CrackMapExec (EXTRA)
+Windows Persistence techniques (EXTRA)
+Windows Persistence - Playing with debugger [When a user opens a program] (EXTRA)
+Windows Persistence - Playing with Gflags [When a user closes a program] (EXTRA)
+Windows Persistence - Playing with WMI Events [Executing tasks at regular intervals of time] (EXTRA)
+Persistence + Windows Defender Evasion [Playing with Ebowla] (EXTRA)</td><td>OSCP</td><td>https://www.youtube.com/watch?v=92XycxcAXkI</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Catch</td><td>10.10.11.150</td><td>Linux</td><td>Media</td><td>APK Analysis (apktool, d2j-dex2jar)
+JD-GUI - Code Inspection
+Information Leakage - Visible Token values
+Cachet Framework Exploitation - SQLI
+Let&#39;s Chat Exploitation - Abusing API (Reading Private Messages)
+Cachet Framework Exploitation - Server Side Template Injection (SSTI) [RCE]
+Abusing Cron Job [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+Mobile</td><td>https://www.youtube.com/watch?v=A6oVNwawRzM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>RE</td><td>10.10.10.144</td><td>Windows</td><td>Difícil</td><td>Creating a malicious office document (libreoffice) - Playing with Macros
+Macros Obfuscation - Bypassing YARA Rules
+ConPtyShell - Enhancing our console mobility
+Abusing defined task in the system
+Malicious Ace files for WinRAR &lt; 5.70 beta 1 - WinRAR Exploitation (Evil-WinRAR-Gen)
+IIS ASPX WebShell through WinRAR Exploitation
+GHIDRA Exploitation - XXE Vulnerability (XML External Entity Injection) [Project Handling]
+Intercepting NetNTLM-v2 hash through the XXE
+Cracking Hashes
+Abusing WinRM - Evil-WinRM
+Playing with Invoke-Command to execute commands as a user whose credentials we know
+PowerUp System Recognition
+Abuse UsoSvc - Creating a new user [Privilege Escalation]
+Manipulating system logs to grant privileges to the newly created user (Psexec)</td><td>OSCP</td><td>https://www.youtube.com/watch?v=KX138goKVC0</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Granny</td><td>10.10.10.15</td><td>Windows</td><td>Fácil</td><td>Abusing PUT &amp; MOVE Methods - Uploading Aspx WebShell
+Microsoft IIS 6.0 - WebDAV &#39;ScStoragePathFromUrl&#39; Remote Buffer Overflow [RCE]
+Token Kidnapping - Churrasco [Privilege Escalation]</td><td>OSCP
+eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=cMeNaUNKK5Y</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Anubis</td><td>10.10.11.102</td><td>Windows</td><td>Insane</td><td>SSL Certificate Inspection - OpenSSL
+XSS (Cross-Site Scripting)
+ASP SSTI (Server Side Template Injection) (HackingDream ASP Resource) [RCE]
+InvokePowerShellTcp.ps1 - PowerShell Reverse Shell
+ConPtyShell (AntonioCoco Utility) - Shell Improvement
+Certificate Signing Request Inspection - OpenSSL
+Chisel  + Remote Port Forwarding + Proxychains - Creating a SOCKS5 tunnel
+Abusing Software Portal
+Traffic inspection with Tcpdump and Tshark
+URL Host Manipulation Attack + Intercepting authentications with Netcat
+Playing with Responder to get a Net-NTLMv2 hash
+Cracking Hashes
+SMB enumeration with authenticated user
+Jamovi &lt;=1.6.18 Exploitation - Malicious OMV File (XSS Vulnerability - Cross-Site Scripting Attack)
+XSS + NodeJS Command Injection + InvokePowerShellTcp.ps1 (Nishang) Reverse Shell
+ConPtyShell (AntonioCoco Utility) - Shell Improvement
+Abusing Certificate Services
+Playing with Certify.exe to find vulnerable templates
+PowerView.ps1 + ADCS.ps1 in order to generate a certificate request and get it approved by the CA
+ADCS.ps1 script manipulation (userprincipalname/samaccountname [Substitution Applied])
+Listing certificates with gci command
+Attempting to obtain credentials with Rubeus (asktgt mode) [ERROR - No longer working]
+Exploiting CVE-2021-42278/CVE-2021-42287 (noPac.py) through Proxychains [Alternative Exploitation]
+Synchronizing our time with DC time (rdate) - Headers Information Leakage
+Getting an interactive console as the administrator user on the DC (noPac.py)</td><td>OSCP (Escalada)
+OSEP (Escalada)
+eWPT
+eWPTXv2
+OSWE
+eCPPTXv2
+Active Directory</td><td>https://www.youtube.com/watch?v=oFBSn4iaLUo</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Grandpa</td><td>10.10.10.14</td><td>Windows</td><td>Fácil</td><td>Microsoft IIS 6.0 - WebDAV &#39;ScStoragePathFromUrl&#39; Remote Buffer Overflow [RCE]
+Token Kidnapping - Churrasco [Privilege Escalation]</td><td>OSCP
+eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=uIasBAMSWsI</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>DevOops</td><td>10.10.10.91</td><td>Linux</td><td>Media</td><td>XXE (XML External Entity Injection) Exploitation
+Reading internal files through XXE - Private SSH Key
+Abusing a Github project - Information Leakage in Project Commits [Privilege Escalation]</td><td>eWPT
+OSWE</td><td>https://www.youtube.com/watch?v=6zrxDaAmjB8</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Late</td><td>10.10.11.156</td><td>Linux</td><td>Fácil</td><td>Virtual Hosting Enumeration
+Abusing Upload File - Image to Text Flask Utility
+SSTI - Server Side Template Injection
+Reading files through SSTI - SSH Private Key
+Abusing Cron Job [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=XxqXoLZtASY</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Obscurity</td><td>10.10.10.168</td><td>Linux</td><td>Media</td><td>Information Leakage
+Python Source Code Analysis
+URL Command Injection
+Known Plaintext Attack - Cryptography Challenge
+Abusing Sudoers Privilege - Shadow Race Condition [Privilege Escalation]</td><td>OSWE
+eWPT
+OSCP (Intrusión)</td><td>https://www.youtube.com/watch?v=chcJmcDrtW4</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Node</td><td>10.10.10.58</td><td>Linux</td><td>Media</td><td>Information Leakage
+API Enumeration
+Cracking Hashes
+Cracking ZIP file
+Backup Download - Stored credentials
+MongoDB Enumeration
+Mongo Task Injection - Command Injection [User Pivoting]
+SUID Backup Binary Exploitation - Dynamic Analysis (1st way)
+SUID Backup Binary Exploitation - Buffer Overflow 32 bits [NX Bypass + ASLR / Ret2libc] (2nd way)</td><td>
+eJPT (Intrusión)
+Buffer Overflow</td><td>https://www.youtube.com/watch?v=0AzaHJZfqwE</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Shrek</td><td>10.10.10.47</td><td>Linux</td><td>Difícil</td><td>Information Leakage
+Steganography Challenge - Hidden message in the spectrogram of an audio file (Audacity)
+Cryptography Challenge - Elliptic Curve (py-seccure)
+Abusing Sudoers Privilege - User Pivoting (Vi)
+Abusing Cron Job - Chown Wildcard Exploitation [Privilege Escalation]</td><td>OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=C2VOcO8MdmI</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Apocalyst</td><td>10.10.10.46</td><td>Linux</td><td>Media</td><td>Wordpress Enumeration
+Image Stego Challenge - Steghide
+Information Leakage - User Enumeration
+WordPress Exploitation - Theme Editor [RCE]
+Abusing misconfigured permissions [Privilege Escalation]</td><td>eJPT
+eWPT
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=ATqk2HpRp_s</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Waldo</td><td>10.10.10.87</td><td>Linux</td><td>Media</td><td>LFI (Local File Inclusion) - Filter Bypass
+Obtaining a user&#39;s SSH private key through the LFI
+Escaping from a container
+Restricted Shell Bypass
+Abusing Capabilities (cap_dac_read_search+ei) [Privilege Escalation]</td><td>eWPT
+eJPT
+OSCP</td><td>https://www.youtube.com/watch?v=KpYZh3gc79o</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Overgraph</td><td>10.10.11.157</td><td>Linux</td><td>Difícil</td><td>Virtual Hosting
+Information Leakage
+Open Redirect Exploitation
+Open Redirect to XSS (Cross-Site Scripting) - Playing with eval/atob
+Open Redirect + XSS evasion technique to fetch an external resource (1st way) [Not working at all]
+XSS Exploitation - Loading encoded URL document.body.innerHTML external file (2nd way) [Success]
+Subdomain Enumeration - Gobuster
+JS File Inspection - Information Leakage
+API Enumeration
+Abusing API - Attempting to register a new user
+NoSQL Injection - OTP Code Bypass
+Abusing API - We have been able to register a new user
+Abusing CHAT - A user checks our links
+Abusing CHAT - Link Inspection + Open Redirect + XSS
+Creating a malicious JS file - Controlling the flow of requests
+JWT Inspection
+Creating a Bash script to enumerate valid users through the API
+Abusing API - We found 3 valid users
+Inspecting the LocalStorage
+LocalStorage Headers Manipulation - Attempting to impersonate a user [Failed]
+LocalStorage Headers Manipulation - Assigning admin privileges to our user
+LocalStorage Headers Manipulation - We found a new file upload field
+File Upload Attempt (No admintoken header present) [Failed]
+CSTI (Client Side Template Injection) Exploitation
+Stored/Reflected XSS (Cross-Site Scripting) Attack - AngularJS
+AngularJS XSS + LocalStorage Data Fields Exfiltration
+GraphQL Enumeration
+Abusing GraphQL - Basic Enumeration (Listing the name of all the types being used)
+Abusing GraphQL - Extracting all the types and it&#39;s arguments
+Abusing GraphQL - Causing errors to list sensitive data
+Abusing GraphQL - Enumerating Database Schema via Introspection
+GraphQL Voyager - Visualizing the data through Introspection
+Abusing GraphQL - Creating our own queries in order to list users information
+Abusing LocalStorage - User Impersonation (ID included) [Success]
+OpenRedirect + XSS + CSTI + JS Malicious File + GraphQL Concatenaed Attack - Stealing adminToken
+We managed to obtain the adminToken by updating the profile using the previous attack
+Abusing File Upload - FFmpeg Exploitation
+External SSRF and Local File Read via video upload due to vulnerable FFmpeg HLS processing
+Creating specially designed m3u8 and avi files
+Local File Read - Data Exfiltration through FFmpeg exploitation
+FFmpeg exploitation - Reading SSH private key (user id_rsa)
+Gaining access via SSH as the user &#39;user&#39;
+Abusing Node Project - Manipulating the service logic to inject commands as root [Unintentional way]
+We were able to assign SUID privileges to the system bash</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=cYVf2KVXyFI</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Brainfuck</td><td>10.10.10.17</td><td>Linux</td><td>Insane</td><td>TLS Certificate Inspection
+WordPress Enumeration
+WordPress WP Support Plus Responsive Ticket System Exploitation - Gaining access as admin user
+Information Leakage - Data type conversion for displaying a password in cleartext
+SMTP Enumeration
+Crypto Challenge - Vigenère Cipher
+Gaining access over SSH
+Abusing LXD group [Privilege Escalation] (1st way) [Unintended]
+RSA Crypto Challenge (2nd way) [Privilege Escalation]</td><td>eWPT
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=0C8zlzxBv7w</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Flujab</td><td>10.10.10.124</td><td>Linux</td><td>Difícil</td><td>SSL Cert Enumeration
+Cookies Manipulation - Gaining access to restricted areas of the site
+Abusing Mailer Configuration
+Mail server hijacking - Intercepting mails with Python
+SQLI (SQL Injection) - Error based in registered patient cancelation form
+Gaining access as the &#39;sysadm&#39; user to an Ajenti panel
+Ajenti Server Management System Exploitation
+Ajenti Exploitation - Creating an authorized public key on the server
+Assigning file permissions through the API
+Managing authorized access through the &#39;hosts.allow&#39; file
+Escaping Restricted Bash (rbash)
+Abusing SUID Binary (GNU Screen) [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=aPbfiHW8GW8</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Silo</td><td>10.10.10.82</td><td>Windows</td><td>Media</td><td>Abusing Oracle Database
+Oracle Database Attacking Tool (ODAT) Installation
+Oracle DB Exploitation - Identifying valid SIDs (sidguesser)
+Oracle DB Exploitation - Discovering valid credentials (passwordguesser)
+Oracle DB Exploitation - Attempting a remote file read
+Oracle DB Exploitation - Attempting a remote file upload
+Oracle DB Exploitation - Attempting execution of a previously uploaded binary file</td><td>OSCP</td><td>https://www.youtube.com/watch?v=_ahxa5Zq5TY</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Heist</td><td>10.10.10.149</td><td>Windows</td><td>Fácil</td><td>Information Leakage
+Cisco Password Cracker (password7)
+SMB Enumeration - CrackMapExec
+Getting more valid system users - lookupsid.py
+Abusing WinRM - EvilWinRM
+Creating a dump file of the Firefox process - Procdump64.exe (Windows Sysinternals)
+Reading the password of the administrator user in the previously performed dump [Privilege Escalation]</td><td>OSCP</td><td>https://www.youtube.com/watch?v=EKwRNymiYfY</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>APT</td><td>10.10.10.213</td><td>Windows</td><td>Insane</td><td>RPC Enumeration
+Abusing RPC - IOXIDResolver.py (Obtaining the IPV6 machine address)
+Port scanning with nmap via ipv6
+SMB enumeration via ipv6
+Cracking ZIP file
+NTDS enumeration (secretsdump.py)
+Abusing Kerberos - Kerbrute (Valid user enumeration)
+SMB Hash Sprying Attempt (Our attack is blocked)
+PyKerbrute Script Manipulation - Adapting the script to our needs (Kerberos attack)
+Reg.py - Reading machine registers remotely (Registry Hives Enumeration)
+Abusing WinRM - Evil-WinRM
+WinPeas - System Enumeration
+Windows Defender Evasion
+Windows Defender Evasion - Bypass-4MSI to disable AMSI (Evil-WinRM)
+Windows Defender Evasion - Playing with Invoke-Binary to load an EXE into memory (Evil-WinRM)
+NTLM clients and services support NTLMv1
+Collecting Net-NTLMv1 Hash via Responder (1122334455667788 Challenge)
+Cracking Hashes (Net-NTLMv1) [crack.sh]
+Secretsdump.py - Dumping the hashes for the rest of the AD users (Using the DRSUAPI method)</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=hh0iNaaCv1I</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Knife</td><td>10.10.10.242</td><td>Linux</td><td>Fácil</td><td>PHP 8.1.0-dev - &#39;User-Agent&#39; Remote Code Execution [RCE]
+Abusing Sudoers Privilege (Knife Binary) [Privilege Escalation]</td><td>eJPT</td><td>https://www.youtube.com/watch?v=NiV52j3fsh8</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Retired</td><td>10.10.11.154</td><td>Linux</td><td>Media</td><td>LFI (Local File Inclusion) - Filter Bypass [Abusing str_replace]
+Buffer Overflow x64 - Full RELRO, NX, PIE, ASLR Bypass [ROP - Abusing a writable section]
+Creating an Autopwn Script [Python Scripting]
+Abusing System Services [User Pivoting]
+Abusing binfmt_misc [Privilege Escalation]</td><td>Buffer Overflow
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=ys-az6SyheE</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>BountyHunter</td><td>10.10.11.100</td><td>Linux</td><td>Fácil</td><td>XXE (XML External Entity Injection) Exploitation
+XXE PHP File Read - Base64 Wrapper
+Abusing Sudoers Privilege [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=egcvKwYpi0g</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Unbalanced</td><td>10.10.10.200</td><td>Linux</td><td>Difícil</td><td>Rsync &amp; EncFS
+Encfs2john to obtain a Hash we can crack
+Cracking Hashes
+Squid Proxy Enumeration
+Burpsuite Tip - Upstream Proxy Servers
+Squid Cache Manager Enumeration
+XPath Injection
+XPath Injection - Discovering valid users
+XPath Injection - Enumerating the password length of the found users
+XPath Injection - Obtaining users&#39; passwords
+Creating a Python script to automate XPATH Injection
+SSH Brute Force - Hydra
+Local Port Forwarding to reach the Pi-Hole web server
+Pi-Hole Exploitation CVE-2020-11108 [PIVOTING] - Abusing Static DHCP leases configuration
+Information Leakage [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+eCPPTv2</td><td>https://www.youtube.com/watch?v=TMQFehvMTvI</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Lame</td><td>10.10.10.3</td><td>Linux</td><td>Fácil</td><td>Samba 3.0.20 &lt; 3.0.25rc3 - Username Map Script [Command Execution]</td><td>eJPT</td><td>https://www.youtube.com/watch?v=9WY2rSejDOY</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>TimeLapse</td><td>10.10.11.152</td><td>Windows</td><td>Fácil</td><td>SMB Enumeration
+Cracking ZIp Password Protected File (fcrackzip)
+Cracking and reading .PFX File (crackpkcs12)
+Gaining SSL access with Evil-WinRM
+Information Leakage - Reading the user&#39;s Powershell history (User Pivoting)
+Abusing LAPS to get passwords (Get-LAPSPasswords.ps1) [Privilege Escalation]</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=NnlYSY83EsA</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Legacy</td><td>10.10.10.4</td><td>Windows</td><td>Fácil</td><td>SMB Enumeration
+Eternalblue Exploitation (MS17-010) [Triple Z Exploit]</td><td>OSCP
+eJPT</td><td>https://www.youtube.com/watch?v=RuWkPH_Vecg</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Devel</td><td>10.10.10.5</td><td>Windows</td><td>Fácil</td><td>Abusing FTP + IIS Services
+Creating an AutoPwn Script [Python Scripting]
+Microsoft Windows (x86) – ‘afd.sys’ (MS11-046) [Privilege Escalation]</td><td>OSCP
+eJPT</td><td>https://www.youtube.com/watch?v=FdCh0A2gZmk</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Valentine</td><td>10.10.10.79</td><td>Linux</td><td>Fácil</td><td>SSL Heartbleed Exploitation
+Cracking Hashes
+Tmux Socket File Session [Privilege Escalation]
+Linux Kernel 2.6.22 &lt; 3.9 - Dirty Cow PTRACE_POKEDATA Race Condition privilege Escalation</td><td>eWPT</td><td>https://www.youtube.com/watch?v=6vvgfbh9cy4</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Talkative</td><td>10.10.11.155</td><td>Linux</td><td>Difícil</td><td>Jamovi Enumeration
+Rj Editor Code Execution (Reverse Shell)
+Information Leakage
+Bolt - Access to the administration panel
+Bolt - PHP File Manipulation (Injecting Malicious Code) [RCE]
+PIVOTING
+Detecting tasks running on the system - PSPY
+Remote Port Forwarding - Chisel
+MongoDB - Changing the admin user password
+Abusing Rocket.Chat - Creating a new malicious webhook
+File Upload Tip - Playing with PwnCat-CS
+Docker Breakout - CDK Utility</td><td>eWPT
+OSWE
+eCPPTv2</td><td>https://www.youtube.com/watch?v=9GNYyb942tI</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Forest</td><td>10.10.10.161</td><td>Windows</td><td>Fácil</td><td>AXFR - Domain Zone Transfer Attack (Failed)
+RPC Enumeration - Getting valid domain users
+Performing an AS-RepRoast attack with the obtained users
+Cracking Hashes
+Abusing WinRM - EvilWinRM
+Ldap Enumeration - ldapdomaindump
+BloodHound Enumeration
+Gathering system information with SharpHound.ps1 - PuckieStyle
+Representing and visualizing data in BloodHound
+Finding an attack vector in BloodHound
+Abusing Account Operators Group - Creating a new user
+Abusing Account Operators Group - Assigning a group to the newly created user
+Abusing WriteDacl in the domain - Granting DCSync Privileges
+DCSync Exploitation - Secretsdump.py</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=7G5wkoBpFWU</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>SolidState</td><td>10.10.10.51</td><td>Linux</td><td>Media</td><td>Abusing James Remote Administration Tool
+Changing a user&#39;s email password
+Information Leakage
+Escaping Restricted Bash (rbash)
+Creating a bash script in order to detect cron jobs (procmon.sh)
+Abusing Cron Job [Privilege Escalation]</td><td>eJPT</td><td>https://www.youtube.com/watch?v=d3tzLtW6SWE</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Wall</td><td>10.10.10.157</td><td>Linux</td><td>Media</td><td>Abusing Basic Auth Path
+Abusing Centreon API - User Brute Force (Wfuzz)
+Abusing Centreon Login Panel - Python Scripting
+Centreon 19.04 Exploitation [RCE]
+WAF Testing
+WAF Bypassing
+Screen 4.5.0 SUID Binary Exploitation [Privilege Escalation]</td><td>eWPT
+OSWE</td><td>https://www.youtube.com/watch?v=MYJbamO88vw</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>FluxCapacitor</td><td>10.10.10.69</td><td>Linux</td><td>Media</td><td>Fuzzing Parameters - Wfuzz
+WAF Bypassing
+Command Injection
+Abusing Sudoers Privilege [Privilege Escalation]</td><td>eWPT
+OSWE</td><td>https://www.youtube.com/watch?v=VdJbvaGXUAA</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Zetta</td><td>10.10.10.156</td><td>Linux</td><td>Difícil</td><td>Information Leakage
+FTP RFC2428 Enumeration
+Abusing RFC-2428 via EPRT command
+Abusing RFC-2428 - Machine IPV6 address information leakage
+IPV6 Scanning with nmap
+Rsync Enumeration
+Abusing Rsync - Brute Force in order to find a valid password [Bash Scripting]
+Abusing Rsync - Creating SSH key pairs to gain access to the system
+Postgres Enumeration
+Enumerating Github Projects
+SYSLOG Enumeration
+SYSLOG Exploitation - Abusing Priorities + SQL Injection [RCE as Postgres]
+Password pattern information leak [Privilege Escalation]</td><td>OSCP</td><td>https://www.youtube.com/watch?v=hB0G0Jp_MBg</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Noter</td><td>10.10.11.160</td><td>Linux</td><td>Media</td><td>Information Leakage - User Enumeration [Brute-Force Wfuzz]
+Finding valid users - Wfuzz
+SSTI (Server Side Template Injection) [Failed]
+JWT Enumeration
+Abusing JWT - Flask-Unsign
+Cracking Flask Cookie Secret - Flask-Unsign
+Cookie Hijacking
+FTP Enumeration
+Information Leakage in PDF document
+Finding a command injection in the web
+RCE in md-to-pdf 4.1.0
+Abusing the vulnerable code definition - Alternative Command Injection (RCE)
+Abusing MYSQL service running as the root user [Privilege Escalation] (raptor_udf2.so)</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=FoFQgoDYzog</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>ScriptKiddie</td><td>10.10.10.226</td><td>Linux</td><td>Fácil</td><td>Msfvenom Exploitation [CVE-2020-7384] [RCE]
+Abusing Logs + Cron Job [Command Injection / User Pivoting]
+Abusing Sudoers Privilege [Msfconsole Privilege Escalation]</td><td>eJPT
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=VXvdwHfYd8M</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Json</td><td>10.10.10.158</td><td>Windows</td><td>Media</td><td>Abusing No Redirect
+Json Deserialization Exploitation - ysoserial.net [RCE]
+AppLocker Bypass
+Abusing SeImpersonatePrivilege - JuicyPotato [Privilege Escalation]
+Abusing SeImpersonatePrivilege - Creating a new user
+Abusing SeImpersonatePrivilege - Adding the user to the local administrators group
+Abusing SeImpersonatePrivilege - Modifying the registry entry LocalAccountTokenFilterPolicy
+Playing with psexec.py and wmiexec.py
+PassTheHash - wmiexec.py
+Executing commands with CrackMapExec
+Dumping the SAM with CrackMapExec
+Enabling RDP with CrackMapExec
+Playing with Remmina to gain access to the system</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=nAF0JnTGkNM</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Sniper</td><td>10.10.10.151</td><td>Windows</td><td>Media</td><td>Local File Inclusion (LFI)
+Remote File Inclusion (RFI) [Failed]
+Remote File Inclusion through SMB Server (net usershare technique) [Success]
+Creating a webshell and achieving remote command execution [RCE]
+Information Leakage [User Pivoting]
+Playing with Chisel and ScriptBlocks using Invoke-Command
+Creating a malicious CHM file (Out-CHM.ps1) [Privilege Escalation]</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=YQn3jAZeZAI</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Beep</td><td>10.10.10.7</td><td>Linux</td><td>Fácil</td><td>Elastix 2.2.0 Exploitation - Local File Inclusion (LFI)
+Information Leakage
+Vtiger CRM Exploitation - Abusing File Upload (1st way) [RCE]
+Shellshock Attack (2nd way) [RCE]</td><td>eWPT</td><td>https://www.youtube.com/watch?v=9BA_s6CGtpY</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Mango</td><td>10.10.10.162</td><td>Linux</td><td>Media</td><td>Virtual Hosting
+NoSQL Injection Login Bypass
+NoSQL Injection - Dumping Users and Passwords [Python Scripting]
+Abusing SUID Binary - JJS [Privilege Escalation]</td><td>eWPT
+OSWE</td><td>https://www.youtube.com/watch?v=w7gO7i212c8</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Bank</td><td>10.10.10.29</td><td>Linux</td><td>Fácil</td><td>Domain Zone Transfer Attack - AXFR (dig)
+Information Leakage
+Abusing File Upload [RCE]
+Abusing SUID Binary (WTF?) [Privilege Escalation]</td><td>eWPT</td><td>https://www.youtube.com/watch?v=eWZ29FJxEmA</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Reel2</td><td>10.10.10.210</td><td>Windows</td><td>Difícil</td><td>Information Leakage
+OWA Password Spray - SprayingToolkit
+Creating a user list - spindrift.py
+Applying brute force to OWA - atomizer.py
+OWA Phishing - Stealing Net-NTLMv2 Hashes with Responder
+Gaining access from PowerShell with Enter-PSSession
+ConstrainedLanguage Mode Bypassing Techniques
+Playing with Nishang to get a fully interactive console (Invoke-PowerShellTcpOneLine.ps1)
+Powershell filtering methods (EXTRA)
+Abusing StickyNotes - Viewing another user password
+Abusing defined functions [Privilege Escalation]</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=gr78zhxjC7I</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Luke</td><td>10.10.10.137</td><td>Linux</td><td>Media</td><td>FTP Enumeration
+Information Leakage
+Abusing NodeJS Application
+API Enumeration
+Abusing Ajenti Administration Panel</td><td>eWPT</td><td>https://www.youtube.com/watch?v=tIoV_Nkrusw</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Doctor</td><td>10.10.10.209</td><td>Linux</td><td>Fácil</td><td>Server Side Template Injection (SSTI)
+Exploiting the SSTI by calling Popen without guessing the offset (1st way) [RCE]
+Command Injection (2nd way) [RCE]
+Abusing adm group - Finding credentials in request logs
+Splunk Exploitation (Universal Forwarder Missconfiguration) - SplunkWhisperer2 [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=2bELzcFGnY4</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>StreamIO</td><td>10.10.10.151</td><td>Windows</td><td>Media</td><td>SSL Certificate Enumeration
+SMB Enumeration
+Kerberos User Enumeration (Kerbrute)
+ASREPRoast Attack (Failed)
+SQL Injection (MSSQL) - WAF Bypass
+NTLM Hash Stealing through SQL Injection (xp_dirtree)
+Cracking Hashes
+Local File Inclusion (LFI)
+LFI + Wrappers (base64 encoding)
+Remote File Inclusion (RFI)
+RFI + RCE via malicious PHP script
+Information Leakage - Database administrator user credentials
+Enumerating the database with sqlcmd
+Password sprying with CrackMapExec
+Abusing WinRM - EvilWinRM
+Abusing Firefox Stored Profile Passwords - Firepwd
+Bloodhound Enumeration
+Playing with SharpHound.ps1 - Puckiestyle
+Abusing WriteOwner privilege over a group - PowerView.ps1
+Playing with Add-DomainObjectAcl &amp;&amp; Add-DomainGroupMember utilities
+Getting LAPS Passwords - ldapsearch [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=lP_ylWaw9eU</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Active</td><td>10.10.10.100</td><td>Windows</td><td>Fácil</td><td>SMB Enumeration
+Abusing GPP Passwords
+Decrypting GPP Passwords - gpp-decrypt
+Kerberoasting Attack (GetUserSPNs.py) [Privilege Escalation]</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=cDutnBcTQtM</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Frolic</td><td>10.10.10.111</td><td>Linux</td><td>Fácil</td><td>Web Enumeration
+Information Leakage
+Playing with esoteric languages - Ook! and Brainfuck
+Cracking Zip Password Protected Files
+PlaySMS Exploitation - &#39;import.php&#39; Remote Code Execution [RCE]
+BufferOverflow 32 bits - Ret2libc [Privilege Escalation]</td><td>
+eWPT
+Buffer Overflow</td><td>https://www.youtube.com/watch?v=mL7ADmxL7ss</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Jewel</td><td>10.10.10.211</td><td>Linux</td><td>Media</td><td>Gitweb Enumeration
+Information Leakage
+Cracking Hashes
+Searching for vulnerabilities in Ruby on Rails with Brakeman
+Deserialization Attack (CVE-2020-8165) - Rails &lt; 5.2.3.4 [RCE]
+Creating a new application with Rails
+Creating the payload with Ruby console
+Abusing Google Authentication (oathtool)
+Abusing sudoers privilege (gem command) [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=71wQWq50aNE</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Laboratory</td><td>10.10.10.216</td><td>Linux</td><td>Fácil</td><td>SSL Certificate Enumeration
+Gitlab Enumeration
+Gitlab Exploitation - Arbitrary file read via the UploadsRewriter when moving an issue
+Gitlab Exploitation - Malicious Marshalled Payload in a session cookie + Deserialization Attack [RCE]
+Abusing gitlab-rails console - Granting administrator privileges to our user
+EXTRA - Playing with Vulhub Pre-Built Vulnerable Environments Based on Docker-Compose
+Information Leakage - SSH Access
+Abusing SUID Binary + PATH Hijacking [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=kspptAGubDo</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Blocky</td><td>10.10.10.37</td><td>Linux</td><td>Fácil</td><td>WordPress Enumeration
+Information Leakage
+Analyzing a jar file - JD-Gui + SSH Access
+Abusing Sudoers Privilege [Privilege Escalation]</td><td>eJPT</td><td>https://www.youtube.com/watch?v=SJf_jAufs-k</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Atom</td><td>10.10.10.237</td><td>Windows</td><td>Media</td><td>SMB Enumeration
+EXE Binary Analysis
+Abusing electron-updater - Signature Validation Bypass [RCE]
+Abusing PortableKanban - Reading the encrypted password
+Redis Enumeration - Obtaining the encrypted password of the administrator user
+Decrypting obtained passwords + Abusing WinRM (Evil-WinRM) [Privilege Escalation]</td><td>OSCP</td><td>https://www.youtube.com/watch?v=FNQw93y3XNE</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Joker</td><td>10.10.10.21</td><td>Linux</td><td>Difícil</td><td>SQUID Proxy Enumeration
+UDP Enumeration
+Abusing TFTP - Getting Squid Proxy Credentials
+Cracking Hashes
+Internal port discovery via SQUID Proxy
+Abusing Interactive Console [RCE]
+Bypassing iptables rules - UDP Reverse Shell
+Abusing Sudoers Privilege [Abusing sudoedit - User Pivoting]
+Abusing Cron Job + TAR Wildcards [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=AoZiJaW5tc8</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Netmon</td><td>10.10.10.152</td><td>Windows</td><td>Fácil</td><td>FTP Enumeration
+Information Leakage
+Abusing PRTG Network Monitor - Command Injection [RCE]</td><td>eJPT
+eWPT
+OSCP</td><td>https://www.youtube.com/watch?v=aPS0VIIL0nQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Cascade</td><td>10.10.10.182</td><td>Windows</td><td>Media</td><td>RPC Enumeration
+User Enumeration via Kerberos - Kerbrute
+ASREPRoast Attack - GetNPUsers.py (Failed)
+LDAP Enumeration - ldapsearch &amp;&amp; ldapdomaindump
+SMB Enumeration - smbclient &amp;&amp; smbmap
+Cracking TightVNC Password - vncpwd
+Kerberoasting Attack - GetUserSPNs.py (Failed)
+Abusing WinRM - EvilWinRM
+Enumerating SQLite3 Database File
+Analysis of Windows EXE binary
+Installing DotPeek on a Windows virtual machine
+Reverse engineering the CBC cipher - Obtaining clear text passwords
+Abusing AD Recycle Bin Group - Active Directory Object Recovery (Get-ADObject) [Privilege Escalation]
+EXTRA: Chisel Remote Port Forwarding (RDP + Remmina)</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=utTEk0WNO04</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Delivery</td><td>10.10.10.222</td><td>Linux</td><td>Fácil</td><td>Virtual Hosting Enumeration
+Abusing Support Ticket System
+Access to MatterMost
+Information Leakage
+Database Enumeration - MYSQL
+Cracking Hashes
+Playing with hashcat rules in order to create passwords
+Playing with sucrack to find out a user&#39;s password</td><td>eJPT
+eWPT</td><td>https://www.youtube.com/watch?v=aTOlZz1ucsc</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Poison</td><td>10.10.10.84</td><td>Linux</td><td>Media</td><td>Local File Inclusion (LFI)
+LFI to RCE - Log Poisoning
+Cracking ZIP file
+Abusing VNC - vncviewer [Privilege Escalation]</td><td>eWPT
+eJPT</td><td>https://www.youtube.com/watch?v=HYqQCYh0CzA</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Scrambled</td><td>10.10.11.168</td><td>Windows</td><td>Media</td><td>Web Enumeration
+Information Leakage
+Ldap Enumeration
+Kerberos Enumeration
+User Enumeration - Kerbrute
+Password Brute Force - Kerbrute
+SMB Enumeration - Kerberos Authentication [getTGT.py]
+ASREPRoast Attack - GetNPUsers.py (Failed)
+Kerberoasting Attack - GetUserSPNs.py
+Manipulating the GetUserSPNs.py script to make it work the way we want it to work
+Cracking Hashes
+Attempting to authenticate to the MSSQL service via kerberos (Failed)
+Explaining Kerberos Auth Flow (TGT, TGS, KDC, AS-REQ, AS-REP, TGS-REQ, TGS-REP, AP-REQ, AP-REP)
+Explaining how Silver Ticket Attack works
+Forging a new TGS as Administrator user (NTLM Hash, Domain SID and SPN) [ticketer.py &amp;&amp; getPAC.py]
+Connecting to the MSSQL service with the newly created ticket
+MSSQL Enumeration
+Enabling xp_cmdshell component in MSSQL [RCE]
+Abusing SeImpersonatePrivilege [JuicyPotatoNG Alternative for Windows Server 2019] (Unintended Way)
+Binary and DLL Analysis
+Downloading OpenVPN from a Windows machine and configuring it to reverse downloaded resources
+Dnspy Installation
+DLL Inspection with Dnspy - Found a backdoor in the code
+We realize that serialization and deserialization of data is being used
+Creating a malicious base64 serialized Payload with ysoserial.net in order to get RCE
+We send the serialized data to the server [Privilege Escalation]</td><td>OSCP
+OSEP
+eWPTXv2 (Escalada)
+Active Directory</td><td>https://www.youtube.com/watch?v=osmFGqnFe8c</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Remote</td><td>10.10.10.180</td><td>Windows</td><td>Fácil</td><td>Web Enumeration
+NFS Enumeration - Showmount
+Information Leakage
+Abusing Umbraco Admin Panel
+Umbraco CMS - Remote Code Execution by authenticated administrators
+Obtaining the TeamViewer password from the system registers (AES128 - CBC) [Privilege Escalation]</td><td>eWPT
+OSCP (Escalada)</td><td>https://www.youtube.com/watch?v=YCApOqCgoC4</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Nibbles</td><td>10.10.10.75</td><td>Linux</td><td>Fácil</td><td>Abusing Nibbleblog - Remote Code Execution via File Upload
+Abusing Sudoers Privilege [Privilege Escalation]</td><td>eJPT</td><td>https://www.youtube.com/watch?v=vAhrLjw1JEA</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>OpenSource</td><td>10.10.11.164</td><td>Linux</td><td>Fácil</td><td>Web Enumeration
+Github Project Enumeration
+Information Leakage
+Abusing File Upload - Replacing Python Files [RCE]
+Local File Inclusion (LFI)
+Shell via Flask Debug - Finding out the PIN (Werkzeug Debugger) [Unintended Way]
+Playing with Chisel - Remote Port Forwarding [PIVOTING]
+Abusing Gitea + Information Leakage
+Abusing Cron Job + Git Hooks [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+eCPPTv2
+OSCP</td><td>https://www.youtube.com/watch?v=Be5wJyhgB_A</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Faculty</td><td>10.10.11.169</td><td>Linux</td><td>Media</td><td>Web Enumeration
+SQL Injection (SQLI) - Manual Blind Time Based [Python Scripting]
+Information Leakage - Error Messages
+Login bypass - SQLI
+Abusing MPDF - Local File Inclusion (LFI)
+Abusing meta-git command - RCE via insecure command formatting
+Abusing gdb capabilitie (cap_sys_ptrace+ep) [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=AnVAmSH81DQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Trick</td><td>10.10.11.166</td><td>Linux</td><td>Fácil</td><td>DNS Enumeration
+Domain Zone Transfer Attack (AXFR)
+SQL Injection (SQLI) - Manual Blind SQLI with Conditional Responses [Python Scripting - AutoPwn]
+Local File Inclusion (LFI) + Wrappers
+Subdomain Discovery
+Local File Inclusion (LFI) + Restriction bypassing
+SMTP Enumeration (VRFY - Discovering valid users)
+LFI to RCE - Nginx Log Poisoning
+Abusing Sudoers Privilege (fail2ban command)</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=NZY6rLNJEAw</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Moderators</td><td>10.10.11.173</td><td>Linux</td><td>Difícil</td><td>Web Enumeration
+Information Leakage
+Insecure Direct Object Reference (IDOR) in order to discover valid reports
+Abusing File Upload - Uploading a PHP file disguised as PDF + Obfuscated Web Shell (Weevely3)
+Abusing Internal Web Server
+Wordpress Brandfolder 3.0 Plugin Exploitation - Local/Remote File Inclusion (User Pivoting)
+Changing admin user password in wordpress via MYSQL (Wordpress Password Hash Generator)
+Virtual Box Image Enumeration
+Cracking VirtualBox Encryption (virtualbox2hashcat)
+Creating a new virtual machine in VirtualBox and installing the extension pack
+Decrypting the VirtualBox VDI Image with VBoxManage
+Mounting the VirtualBox VDI Image (qemu-nbd)
+Cracking the LUKS v2 Password (bruteforce-luks-static-linux-amd64)
+Mounting the Luks Drive (cryptsetup)
+Finding a password among the mounted files
+Abusing sudoers privilege [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE</td><td>https://www.youtube.com/watch?v=oYmY8HPYWJY</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Shared</td><td>10.10.11.172</td><td>Linux</td><td>Media</td><td>Web Enumeration
+SQL Injection (SQLI) in a Cookie
+Cracking Hashes
+Abusing Cron Job
+iPython Arbitrary Code Execution - CVE-2022-21699 (User Pivoting)
+Information Leakage
+Abusing Redis - Sandbox Escape (CVE-2022-0543) [Privilege Escalation]</td><td>eWPT
+OSCP</td><td>https://www.youtube.com/watch?v=MGL6PK5s2yU</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>RedPanda</td><td>10.10.11.170</td><td>Linux</td><td>Fácil</td><td>Server Side Template Injection (SSTI)
+SSTI - Bypassing special character restriction
+SSTI - Creation of a Python script to automate java injection (RCE)
+Creating a Bash script for process monitoring with user included
+Abusing log file + Image etadata + XML External Entity Injection (XXE) [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=Ugz1RcYLd5M</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Squashed</td><td>10.10.11.191</td><td>Linux</td><td>Fácil</td><td>NFS Enumeration
+Abusing owners assigned to NFS shares by creating new users on the system (Get Access to Web Root)
+Creating a web shell to gain system access
+Abusing .Xauthority file (Pentesting X11)
+Taking a screenshot of another user&#39;s display</td><td>OSCP</td><td>https://www.youtube.com/watch?v=maTw2StNFI4</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Carpediem</td><td>10.10.11.167</td><td>Linux</td><td>Difícil</td><td>Web Enumeration
+Parameter Fuzzing with Wfuzz
+Mass Assignment Attack - Giving admin privileges to our user
+Creating a HTML form with OpenAI in order to exploit file uploading
+Information Leakage - Reading sensitive files with hardcoded passwords
+Trudesk API Enumeration
+Trudesk API Enumeration - Finding valid tickets + Xargs Tip (Fast ticket discovery)
+Setting up Zoiper
+Making a call from Zoiper to obtain access credentials
+Abusing Capabilities (tcpdump)
+Abusing Weak Cipher Suite - TLS_RSA_WITH_AES_256_CBC_SHA256 (TLSv1.2 Traffic)
+Importing the certificate into Wireshark and decrypting traffic
+Backdrop Enumeration &amp;&amp; Backdrop Exploitation
+Abusing Backdrop - Installing a new module
+Abusing a cron job on a container [Container privilege escalation]
+Abusing CVE-2022-0492 (Container Escape via Cgroups) [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+eCPPTv2
+eCPTXv2
+OSCP</td><td>https://www.youtube.com/watch?v=dkJQMRJHeKg</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Support</td><td>10.10.11.174</td><td>Windows</td><td>Fácil</td><td>SMB Enumeration
+EXE Binary Analysis
+Debugging with DNSpy
+Setting breakpoints and getting an LDAP password in clear text (DNSpy)
+Kerberos User Enumeration (kerbrute)
+Ldap Enumeration (ldapsearch)
+Information Leakage
+Abusing Remote Management Users group (Evil-WinRM)
+SharpHound + BloodHound Enumeration
+Abusing Shared Support Accounts (GenericAll) (rbcd Attack) [Resource Based Constrained Delegation]
+Resource Based Constrained Delegation Attack - Creating a Computer Object (powermad.ps1)
+Resource Based Constrained Delegation Attack - PowerView.ps1
+Resource Based Constrained Delegation Attack - Getting the impersonated service ticket (getST.py)
+Using the ticket to gain Administrator access [Privilege Escalation]</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=AlrB-uBUuTA</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Outdated</td><td>10.10.11.175</td><td>Windows</td><td>Media</td><td>SMB Enumeration
+Follina Exploitation (CVE-2022-30190) + Nishang PowerShell TCP Shell [Remote Code Execution]
+SharpHound + BloodHound DC Enumeration
+Abusing AddKeyCredentialLink Privilege [Invoke-Whisker.ps1 - Shadow Credentials]
+Getting the user&#39;s NTLM Hash with Rubeus
+Abusing WinRM - EvilWinRM
+Abusing WSUS Administrators Group
+WSUS Exploitation - Creating a malicious patch for deployment [Privilege Escalation]</td><td>OSCP
+OSEP
+Active Directory</td><td>https://www.youtube.com/watch?v=3xU66O-1pWU</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Health</td><td>10.10.11.176</td><td>Linux</td><td>Media</td><td>Web Enumeration
+Abusing WebHook Setup
+Creating a PHP file to apply a Redirect and point to internal machine services [Restriction Bypassing]
+Gogs v0.5.5 Exploitation - SQL Injection [CVE-2014-8682]
+Running Gogs v0.5.5 Locally for successful exploitation
+Creating a SQL injection that allows us to obtain the salt and password of a user
+Hash restructuring in order to crack it
+SSRF (Server Side Request Forgery) + SQL Injection
+Cracking Hashes
+Abusing Cron Job (Database Manipulation) [Privilege Escalation]</td><td>eWPT
+eWPTXv2
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=7wwOejPwwYU</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Shoppy</td><td>10.10.11.180</td><td>Linux</td><td>Fácil</td><td>Virtual Hosting
+Subdomain Enumeration
+NoSQL Injection (Admin Auth Bypass)
+Abusing the Shoppy App search engine (NoSQL Injection) - Obtaining the password of DB users
+Cracking Hashes Online
+Log into Mattermost + Information Leakage
+Abusing Sudoers Privilege
+Binary Analysis - GHIDRA (Reverse Engineering)
+Abusing docker group [Privilege Escalation]</td><td>eWPT
+OSWE
+OSCP</td><td>https://www.youtube.com/watch?v=1pddk1u9jnQ</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>UpDown</td><td>10.10.11.177</td><td>Linux</td><td>Media</td><td>Web Enumeration
+Subdomain Discovery (gobuster)
+Finding .git directory with nmap (http-enum)
+Playing with git-dumper in order to get the files of the project
+PHP Source Analysis
+Information Leakage
+Abusing HTACCESS Policies
+Abusing File Upload (ZIP file + PHP File + Restriction Bypass + PHAR Wrapper)
+Playing with dfunc-bypasser in order to find functions through which we can execute commands
+Abusing proc_open and executing commands [RCE]
+Abusing SUID Binary (Command injection in Python2 Input function) [User Pivoting]
+Abusing Sudoers Privilege (easy_install binary) [Privilege Escalation]</td><td>OSWE
+eWPT
+eWPTXv2
+OSCP</td><td>https://www.youtube.com/watch?v=36Ua0nrwc7g</td><td>Si</td>
+</tr>
+<tr style="background-color: #ffffff">
+<td>Ambassador</td><td>10.10.11.183</td><td>Linux</td><td>Media</td><td>Web Enumeration
+Grafana v8.2.0 Exploitation [CVE-2021-43798] (Unauthorized Arbitrary File Read Vulnerability)
+Enumerating a sqlite3 file [Extracting mysql login credentials]
+System Github Project Enumeration
+Hashicorp Consul Exploitation (Command Execution via API) [Privilege Escalation]</td><td>eWPT
+OSCP</td><td>https://www.youtube.com/watch?v=fli1xeT3c-s</td><td>Si</td>
+</tr>
+<tr style="background-color: #f0f0f0">
+<td>Photobomb</td><td>10.10.11.182</td><td>Linux</td><td>Fácil</td><td>Virtual Hosting
+Web Enumeration
+Information Leakage - Credentials in Javascript File
+Abusing Image Download Utility (Command Injection) [RCE]
+Abusing Sudoers privilege + PATH Hijacking (find command) [1st way] [Privilege Escalation]
+Abusing Sudoers privilege + PATH Hijacking ( ] command ) [2st way] [Privilege Escalation]</td><td>OSCP
+eWPT</td><td>https://www.youtube.com/watch?v=rAY1GMvrO0g</td><td>Si</td>
+</tr>
+</table>
+</body>
+</html>
