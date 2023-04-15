@@ -86,8 +86,8 @@ function imprime_maquina()
   nombre_maquina="${information[0]}";
   IP=$(echo "${information[1]}" | tr -d '\n');
   OS=$(echo "${information[2]}" | tr -d '\n');
-  skills=$(echo -e "${information[4]}" | sed 's/\n/, /g' | column);
-  cert=$(echo -e "${information[5]}" | sed 's/\n/, /g' | column);
+  skills=$(echo -e "${information[4]}" | column -s '\n');
+  cert=$(echo -e "${information[5]}" | sed 's/\n/, /g' | column -d);
   url=$(echo "${information[6]}" | tr -d '\n');
 
   for index in "${!information[@]}"
@@ -167,6 +167,7 @@ function updateFiles()
       echo -e "\n ${yellowColour}[+]${endColour}${greenColour} Actualizacion completa.${endColour}"
     fi
   fi
+
 }
 # funcion para buscar por nombre
 function searchByName()
