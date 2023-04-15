@@ -173,9 +173,9 @@ function searchByName()
 {
   nameMachine="$1";
   echo -e "\n${yellowColour}[+]${endColour}${grayColour} Buscando por nombre de la maquina:${endColour}${grayColour} ${nameMachine}${endColour}\n";
-  output="$(cat machines_htb | awk "/${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
+  output="$(cat machines_htb | awk "BEGIN{IGNORECASE=1}/${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
   if [ -n "$output" ]; then
-    readarray -t -d ',' info_machine <<< "$(cat machines_htb | awk "/${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
+    readarray -t -d ',' info_machine <<< "$(cat machines_htb | awk "BEGIN{IGNORECASE=1}; /${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
     imprime_maquina "${info_machine[@]}";
   else
     echo -e "\n ${redColour} No existen maquinas con ese nombre${endColour}";
