@@ -63,6 +63,46 @@ function exit_tool()
 
 
 # Funcionalidades del sistema
+
+function imprime_nombre_por_dif()
+{
+  dificultad="$1";
+  imprime="$2"
+  info="$3";
+
+  case "${dificultad}" in 
+    F*) echo -e "\n${yellowColour}[*] ${endColour}${blueColour}${info}:${endColour}${greenColour} ${imprime}${endColour}"; ;;
+    M*) echo -e "\n${yellowColour}[*] ${endColour}${blueColour}${info}:${endColour}${yellowColour} ${imprime}${endColour}"; ;;
+    D*) echo -e "\n${yellowColour}[*] ${endColour}${blueColour}${info}:${endColour}${redColour} ${imprime}${endColour}"; ;;
+    I*) echo -e "\n${yellowColour}[*] ${endColour}${blueColour}${info}:${endColour}${purpleColour} ${imprime}${endColour}"; ;;
+    *)  echo -e "\n${redColour}Error al imprimir${endColour} |"; ;;
+  esac
+}
+
+# Fucnion para imprimier un arreglo con informaicon de la maquina encontrada
+function imprime_maquina()
+{
+  information=("$@");
+  nombre_maquina="${information[0]}";
+  IP=$(echo "${information[1]}" | tr -d '\n');
+  OS=$(echo "${information[2]}" | tr -d '\n');
+  skills=$(echo -e "${information[4]}" | sed 's/\n/, /g' | column);
+  cert=$(echo -e "${information[5]}" | sed 's/\n/, /g' | column);
+  url=$(echo "${information[6]}" | tr -d '\n');
+
+  for index in "${!information[@]}"
+  do
+    case ${index} in
+      0)imprime_nombre_por_dif ${information[3]} ${nombre_maquina} "Nombre"; ;;
+      1)echo -e "\n${yellowColour}[*] ${endColour}${blueColour}IP:${endColour} ${purpleColour}$IP${endColour}"; ;;
+      2)echo -e "\n${yellowColour}[*] ${endColour}${blueColour}SO:${endColour} ${purpleColour}$OS${endColour}"; ;;
+      3)imprime_nombre_por_dif ${information[3]} ${information[3]} "Dificultad"; ;;
+      4)echo -e "\n${yellowColour}[*] ${endColour}${blueColour}Skills:${endColour}\n\n${grayColour}$skills${endColour}"; ;;
+      5)echo -e "\n${yellowColour}[*] ${endColour}${blueColour}Certificaciones:$endColour\n\n${grayColour}$cert${endColour}"; ;;
+      6)echo -e "\n${yellowColour}[*] ${endColour}${blueColour}URL:${endColour} ${greenColour}$url${purpleColour}"; ;;
+    esac
+  done;
+}
 # catch error default case
 function catch_default()
 {
@@ -85,7 +125,7 @@ function updateFiles()
 {
   #revisando maquinas de vulnhub
   if [ ! -f machines_vulnhub ]; then
-    echo -e "\n ${yellowColour}[+]${endColour}${grayColour}Descargando máquinas de Vulnhub...${endColour}";
+    echo -e "\n ${yellowColour}[+]${endColour}${grayColour} Descargando máquinas de Vulnhub...${endColour}";
     wget ${url_vulnhub} -q -O machines_vulnhub;
   else
     echo -e "\n ${yellowColour}[+] Comprobando actualizaciones de Vulnhub ...${endColour}";
@@ -95,17 +135,19 @@ function updateFiles()
     echo -e "\n ${yellowColour}[-]${endColour} ${grayColour}Checando md5sum: ${endColour} ${blueColour}${md5_vuln}${endColour} ${grayColour}-${endColour} ${greenColour}${md5_vuln_tmp}${endColour}";
     
     if [ "$md5_vuln" == "$md5_vuln_tmp" ]; then
-      echo -e "\n ${yellowColour}[+]${endColour} Todo esta actualizado.";
+      echo -e "\n ${yellowColour}[+]${endColour} ${purpleColour}Todo esta actualizado.${endColour}";
+      rm machines_vuln_tmp;
     else
       echo -e "\n ${yellowColour}[+]${endColour}${grayColour} Actualizando...${endColour}";
       rm machines_vulnhub;
       mv machines_vuln_tmp machines_vulnhub;
+      echo -e "\n ${yellowColour}[+]${endColour}${greenColour} Actualizacion completa.${endColour}"
     fi
   fi
 
   #revisando si existe las maquinas de HTB
   if [ ! -f machines_htb ]; then
-    echo -e "\n ${yellowColour}[+]${endColour}${grayColour}Descargando máquinas de HackTheBox...${endColour}";
+    echo -e "\n ${yellowColour}[+]${endColour}${grayColour} Descargando máquinas de HackTheBox...${endColour}";
     wget ${url_htb} -q -O machines_htb; 
   else
     echo -e "\n ${yellowColour}[+] Comprobando actualizaciones de HackTheBox ...${endColour}";
@@ -116,12 +158,27 @@ function updateFiles()
     echo -e "\n ${yellowColour}[-]${endColour} ${grayColour}Checando md5sum: ${endColour} ${blueColour}${md5_htb}${endColour} ${grayColour}-${endColour} ${greenColour}${md5_htb_tmp}${endColour}";
 
     if [ "$md5_htb" == "$md5_htb_tmp" ]; then
-      echo -e "\n ${yellowColour}[+]${endColour} Todo esta actualizado.";
+      echo -e "\n ${yellowColour}[+]${endColour} ${purpleColour}Todo esta actualizado.${endColour}";
+      rm machines_htb_tmp;
     else
-      echo -e "\n ${yellowColour}[+]${endColour} ${grayColour} Actualizando...${endColour}";
+      echo -e "\n ${yellowColour}[+]${endColour}${grayColour} Actualizando...${endColour}";
       rm machines_htb;
       mv machines_htb_tmp machines_htb;
+      echo -e "\n ${yellowColour}[+]${endColour}${greenColour} Actualizacion completa.${endColour}"
     fi
+  fi
+}
+# funcion para buscar por nombre
+function searchByName()
+{
+  nameMachine="$1";
+  echo -e "\n${yellowColour}[+]${endColour}${grayColour} Buscando por nombre de la maquina:${endColour}${grayColour} ${nameMachine}${endColour}\n";
+  output="$(cat machines_htb | awk "/${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
+  if [ -n "$output" ]; then
+    readarray -t -d ',' info_machine <<< "$(cat machines_htb | awk "/${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
+    imprime_maquina "${info_machine[@]}";
+  else
+    echo -e "\n ${redColour} No existen maquinas con ese nombre${endColour}";
   fi
 }
 
@@ -139,7 +196,7 @@ while getopts "m:hu" arg; do
 
 #Valuacion de opciones
 case $counter in
-  1) searchByName;;
+  1) searchByName $nameMachine;;
   2) updateFiles;;
   3) helpPanel;;
   *) catch_default;;
