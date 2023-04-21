@@ -80,8 +80,19 @@ function imprime_nombre_por_dif()
 }
 
 # Fucnion para imprimier un arreglo con informaicon de la maquina encontrada
-function imprime_maquina()
+function imprime_maquina_htb()
 {
+  echo -e "\n${purpleColour} Plataforma: ${endColour}";
+
+  echo -e "\n ${greenColour} \n'##::::'##::::'###:::::'######::'##:::'##:'########:'##::::'##:'########:'########:::'#######::'##::::'##:
+ ##:::: ##:::'## ##:::'##... ##: ##::'##::... ##..:: ##:::: ##: ##.....:: ##.... ##:'##.... ##:. ##::'##::
+ ##:::: ##::'##:. ##:: ##:::..:: ##:'##:::::: ##:::: ##:::: ##: ##::::::: ##:::: ##: ##:::: ##::. ##'##:::
+ #########:'##:::. ##: ##::::::: #####::::::: ##:::: #########: ######::: ########:: ##:::: ##:::. ###::::
+ ##.... ##: #########: ##::::::: ##. ##:::::: ##:::: ##.... ##: ##...:::: ##.... ##: ##:::: ##::: ## ##:::
+ ##:::: ##: ##.... ##: ##::: ##: ##:. ##::::: ##:::: ##:::: ##: ##::::::: ##:::: ##: ##:::: ##:: ##:. ##::
+ ##:::: ##: ##:::: ##:. ######:: ##::. ##:::: ##:::: ##:::: ##: ########: ########::. #######:: ##:::. ##:
+..:::::..::..:::::..:::......:::..::::..:::::..:::::..:::::..::........::........::::.......:::..:::::..::${endColour}\n";
+  
   information=("$@");
   nombre_maquina="${information[0]}";
   IP=$(echo "${information[1]}" | tr -d '\n');
@@ -177,7 +188,7 @@ function searchByName()
   output="$(cat machines_htb | awk "BEGIN{IGNORECASE=1}/${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
   if [ -n "$output" ]; then
     readarray -t -d ',' info_machine <<< "$(cat machines_htb | awk "BEGIN{IGNORECASE=1}; /${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
-    imprime_maquina "${info_machine[@]}";
+    imprime_maquina_htb "${info_machine[@]}";
   else
     echo -e "\n ${redColour} No existen maquinas con ese nombre${endColour}";
   fi
