@@ -129,6 +129,7 @@ function helpPanel()
   echo -e "\n\t${yellowColour}-h: ${endColour}${grayColour}Muestra este panel de ayuda.${endColour}\n";
   echo -e "\n\t${yellowColour}-u: ${endColour}${grayColour}Update máquinas.${endColour}\n";
   echo -e "\n\t${yellowColour}-m: ${endColour}${grayColour}Buscar por nombre de la maquina.${endColour}\n";
+  echo -e "\n\t${yellowColour}-d: ${endColour}${grayColour}Buscar por dificultad de la maquina.${endColour}\n";
 }
 
 # Funcion para hacer el download de los archivos y verificar cambios
@@ -184,7 +185,7 @@ function updateFiles()
 function searchByName()
 {
   nameMachine="$1";
-  echo -e "\n${yellowColour}[+]${endColour}${grayColour} Buscando por nombre de la maquina:${endColour}${grayColour} ${nameMachine}${endColour}\n";
+  echo -e "\n${yellowColour}[+]${endColour}${grayColour} Nombre de la maquina:${endColour}${grayColour} ${nameMachine}${endColour}\n";
   output="$(cat machines_htb | awk "BEGIN{IGNORECASE=1}/${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
   if [ -n "$output" ]; then
     readarray -t -d ',' info_machine <<< "$(cat machines_htb | awk "BEGIN{IGNORECASE=1}; /${nameMachine},/,/,Si/" | sed 's/,/,\n/g' | grep -v "Si" | tr -d '"')";
@@ -194,14 +195,30 @@ function searchByName()
   fi
 }
 
+#funcion para buscar por dificiltad
+function searchBydif()
+{
+  dificultad="$dificulty";
+  echo -e "\n${yellowColour}[+]${endColour}${grayColour} Buscando por dificultad de las maquinas:${endColour}${grayColour} ${dificultad}${endColour}\n";
+  output="$(cat machines_htb | grep -i "$dificultad" | tr ',' ' ' | awk '{print $1}')";
+  echo;
+  for machine in $output
+  do
+    searchByName $machine >> /opt/htbmachines/dificultad.txt;
+  done;
+  cat /opt/htbmachines/dificultad.txt | less -R;
+  rm /opt/htbmachines/dificultad.txt;
+}
+
 # Logica del programa
 adios_cursor;
 banner;
 
 # Options
-while getopts "m:hu" arg; do
+while getopts "md:hu" arg; do
   case $arg in 
     m)nameMachine=$OPTARG;let counter=1; ;;
+    d)dificulty=$OPTARG;let counter=4 ;;
     u)let counter=2; ;;
     h)let counter=3; ;;
   esac done;
@@ -211,6 +228,7 @@ case $counter in
   1) searchByName $nameMachine;;
   2) updateFiles;;
   3) helpPanel;;
+  4) searchBydif $dificulty;;
   *) catch_default;;
 esac;
 
